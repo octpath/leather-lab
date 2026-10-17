@@ -1,4 +1,6 @@
-# リップクリームケース
+# Lip Balm Case
+
+英語正式名：**Lip Balm Case**／日本語名：**リップクリームケース**
 
 革絞りした前面A、背面兼フラップB、Dカン留めCで作るリップクリームケースです。AとBの左右・底を縫い合わせ、フラップをバネホックで留めます。前面の底は丸く成形します。
 
@@ -6,18 +8,18 @@
 
 | 用途 | ファイル |
 | --- | --- |
-| 原寸の型紙PDF（表紙を含む4ページ） | [oct_Lip_Balm_Case_Pattern.pdf](pdf/oct_Lip_Balm_Case_Pattern.pdf) |
-| 革絞り用の下型 | [M1_lower_former.stl](3d/M1_lower_former.stl) |
-| 幅広い成形用上枠 | [M2_forming_frame.stl](3d/M2_forming_frame.stl) |
-| 裁断・縫い穴位置写し用上枠 | [M3_trimming_frame.stl](3d/M3_trimming_frame.stl) |
-| Aの粗裁ち用3D型紙 | [A_rough_blank.stl](3d/A_rough_blank.stl) |
-| Bの3D型紙 | [B_back_flap.stl](3d/B_back_flap.stl) |
-| Cの3D型紙 | [C_d_ring_tab.stl](3d/C_d_ring_tab.stl) |
-| 6部品の編集・再出力用原稿 | [lip_balm_tools.scad](3d/lip_balm_tools.scad) |
+| 原寸の型紙PDF（表紙を含む4ページ） | [lip-balm-case-pattern.pdf](pdf/lip-balm-case-pattern.pdf) |
+| 革絞り用の下型 | [m1-lower-former.stl](3d/m1-lower-former.stl) |
+| 幅広い成形用上枠 | [m2-forming-frame.stl](3d/m2-forming-frame.stl) |
+| 裁断・縫い穴位置写し用上枠 | [m3-trimming-frame.stl](3d/m3-trimming-frame.stl) |
+| Aの粗裁ち用3D型紙 | [a-rough-blank.stl](3d/a-rough-blank.stl) |
+| Bの3D型紙 | [b-back-flap.stl](3d/b-back-flap.stl) |
+| Cの3D型紙 | [c-d-ring-tab.stl](3d/c-d-ring-tab.stl) |
+| 6部品の編集・再出力用原稿 | [lip-balm-tools.scad](3d/lip-balm-tools.scad) |
 | 3D治具の寸法・印刷・使用手順 | [3d/README.md](3d/README.md) |
 | PDFの生成元・形状データ | [source/README.md](source/README.md) |
 
-![革絞り治具と3D型紙のプレビュー](images/3d_tools.png)
+![革絞り治具と3D型紙のプレビュー](images/3d-tools.png)
 
 ## 材料と寸法
 

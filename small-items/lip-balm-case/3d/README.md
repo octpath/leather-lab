@@ -1,4 +1,6 @@
-# oct リップクリームケース：3Dツール v01
+# Lip Balm Case — 3D Tools
+
+リップクリームケースの3D型紙・革絞り治具です。
 
 PLA・Bambu Lab P1S・0.4mmノズル向けの初回試作用です。寸法の単位はmmです。
 確定したPDFの裁断輪郭と縫い穴中心を引き継いでいます。
@@ -7,13 +9,13 @@ PLA・Bambu Lab P1S・0.4mmノズル向けの初回試作用です。寸法の�
 
 | ファイル | 用途 |
 | --- | --- |
-| M1_lower_former.stl | 凸型と、裏面に格子リブを持つ下型土台 |
-| M2_forming_frame.stl | クランプ用の幅広い成形用上枠。上面にリブと平らなクランプ座 |
-| M3_trimming_frame.stl | Aの仕上げ裁断・縫い穴位置写し用の細い上枠。口元のアーチ付き |
-| A_rough_blank.stl | Aの90×120mm粗裁ち用。口元基準とホック中心の位置写し |
-| B_back_flap.stl | 背面兼フラップの裁断・穴位置写し |
-| C_d_ring_tab.stl | Dカン留めの裁断・穴位置写し |
-| lip_balm_tools.scad | 6部品を選択して編集・再出力できるOpenSCAD原稿 |
+| m1-lower-former.stl | 凸型と、裏面に格子リブを持つ下型土台 |
+| m2-forming-frame.stl | クランプ用の幅広い成形用上枠。上面にリブと平らなクランプ座 |
+| m3-trimming-frame.stl | Aの仕上げ裁断・縫い穴位置写し用の細い上枠。口元のアーチ付き |
+| a-rough-blank.stl | Aの90×120mm粗裁ち用。口元基準とホック中心の位置写し |
+| b-back-flap.stl | 背面兼フラップの裁断・穴位置写し |
+| c-d-ring-tab.stl | Dカン留めの裁断・穴位置写し |
+| lip-balm-tools.scad | 6部品を選択して編集・再出力できるOpenSCAD原稿 |
 
 STLは各部品を単独で印刷する向きに配置済みです。実機用G-codeではありません。
 まずM1・M2・M3を印刷して仮合わせし、実革で形状を確認する順番を推奨します。

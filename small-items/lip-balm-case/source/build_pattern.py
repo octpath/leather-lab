@@ -344,7 +344,7 @@ def cover(c):
 
 
 def make_pdf():
-    file = OUT / "oct_Lip_Balm_Case_Pattern.pdf"
+    file = OUT / "lip-balm-case-pattern.pdf"
     c = canvas.Canvas(str(file), pagesize=(PAGE_W, PAGE_H), pageCompression=1)
     c.setTitle("リップクリームケース | oct")
     c.setAuthor("oct")
@@ -464,10 +464,10 @@ def write_svgs():
     s += [f'<path d="M 0 0 H {w:.9f} V {STRAIGHT:.9f} A {CUT_R:.9f} {CUT_R:.9f} 0 0 1 0 {STRAIGHT:.9f} Z" fill="none" stroke="#1F1F1F" stroke-width="{CUT_WIDTH_MM:.9f}"/>']
     s += [svg_dot(x+CUT_R,y) for x,y in SEAM]
     s += ['</svg>']
-    (ROOT/"A_formed_projection.svg").write_text('\n'.join(s),encoding="utf-8")
+    (ROOT/"a-formed-projection.svg").write_text('\n'.join(s),encoding="utf-8")
     # The paper window template is intentionally omitted; retain only the
     # formed contour as a future 3D trimming-guide reference.
-    (ROOT/"A_negative_cutting_template.svg").unlink(missing_ok=True)
+    (ROOT/"a-negative-cutting-template.svg").unlink(missing_ok=True)
     h=FLAP_EXTENSION+FORMED_H
     s=svg_start(w,h,"B 背面兼フラップ")
     s += [f'<path d="M 0 {CUT_R:.9f} A {CUT_R:.9f} {CUT_R:.9f} 0 0 1 {w:.9f} {CUT_R:.9f} V {h-CUT_R:.9f} A {CUT_R:.9f} {CUT_R:.9f} 0 0 1 0 {h-CUT_R:.9f} Z" fill="none" stroke="#1F1F1F" stroke-width="{CUT_WIDTH_MM:.9f}"/>']
@@ -482,7 +482,7 @@ def write_svgs():
     for x,y in BACK_TAB_AWL:
         s += [f'<circle cx="{x+CUT_R:.9f}" cy="{y+FLAP_EXTENSION:.9f}" r="0.4" fill="white" stroke="#A34D0F" stroke-width="{STITCH_WIDTH_MM:.9f}"/>',svg_dot(x+CUT_R,y+FLAP_EXTENSION)]
     s += ['</svg>']
-    (ROOT/"B_back_flap.svg").write_text('\n'.join(s),encoding="utf-8")
+    (ROOT/"b-back-flap.svg").write_text('\n'.join(s),encoding="utf-8")
     s=svg_start(TAB_W,TAB_H,"C Dカン留め")
     s += [f'<rect x="0" y="0" width="{TAB_W}" height="{TAB_H}" rx="2" fill="none" stroke="#1F1F1F" stroke-width="{CUT_WIDTH_MM:.9f}"/>',
           f'<path d="M 0 {TAB_SHORT_RETURN} H {TAB_W}" stroke="#336E91" stroke-width="{GUIDE_WIDTH_MM:.9f}" stroke-dasharray="{dash}"/>',
@@ -491,7 +491,7 @@ def write_svgs():
         s += [f'<path d="M 3 {y} H 11" stroke="#A34D0F" stroke-width="{STITCH_WIDTH_MM:.9f}"/>']
     s += [svg_dot(x,y) for x,y in TAB_BLANK_HOLES]
     s += ['</svg>']
-    (ROOT/"C_d_ring_tab.svg").write_text('\n'.join(s),encoding="utf-8")
+    (ROOT/"c-d-ring-tab.svg").write_text('\n'.join(s),encoding="utf-8")
 
 
 def write_data():
