@@ -12,7 +12,10 @@ import numpy as np
 from scipy.optimize import linear_sum_assignment
 from scipy.spatial.distance import cdist
 from shapely.geometry import Point, Polygon
+from shapely import affinity
+from shapely.ops import unary_union
 import trimesh
+from reinforcement import check_scad_defaults, load_config, profiles, validate
 
 SOURCE=Path(__file__).resolve().parent
 PROJECT=SOURCE.parent
@@ -68,24 +71,51 @@ def fit_circles(section):
     return np.array(circles)
 
 
+def section_shape(mesh, z):
+    section=mesh.section(plane_origin=[0,0,z],plane_normal=[0,0,1])
+    shape=Polygon()
+    for loop in section.discrete:
+        p=Polygon(np.asarray(loop)[:,:2])
+        assert p.is_valid,('invalid section',z)
+        shape=shape.symmetric_difference(p)
+    return shape
+
+
+def expected_profile(data, config, name, field):
+    shapes=[]
+    poses=data['layout']['poses'] if name=='layout' else [{'part':name,'translate':[0,0],'rotation':0}]
+    for pose in poses:
+        letter=pose['part'];part=data[KEYS[letter]]
+        height=max(y for x,y in part['outline'])
+        s=profiles(data,config,letter)[field]
+        s=affinity.translate(affinity.scale(s,xfact=1,yfact=-1,origin=(0,0)),yoff=height)
+        s=affinity.rotate(s,pose['rotation'],origin=(0,0))
+        shapes.append(affinity.translate(s,*pose['translate']))
+    return unary_union(shapes)
+
+
 def verify_mesh(data,name):
+    config=load_config();settings=config['parameters']
     path=PROJECT/'3d'/FILES[name]
     m=trimesh.load_mesh(path,process=True)
     assert m.is_watertight and m.is_winding_consistent and m.volume>0,name
     parts=m.split(only_watertight=False)
     expected=layout_holes(data) if name=='layout' else expected_holes(data,name)
     component_count=4 if name=='layout' else 1
+    letters=list(KEYS) if name=='layout' else [name]
+    window_count=sum(len(profiles(data,config,n)['windows']) for n in letters)
     assert len(parts)==component_count,(name,len(parts))
-    assert m.euler_number==2*component_count-2*len(expected),(name,m.euler_number)
+    assert m.euler_number==2*component_count-2*(len(expected)+window_count),(name,m.euler_number)
     thickness=data['printing']['plate_thickness']
-    assert abs(m.bounds[0,2])<.0001 and abs(m.bounds[1,2]-thickness)<.0001,name
+    total_height=thickness+(settings['rib_height'] if settings['ribs_enabled'] else 0)
+    assert abs(m.bounds[0,2])<.0001 and abs(m.bounds[1,2]-total_height)<.0001,name
     if name=='layout':
         pp=np.array([p for e in data['layout']['parts'] for p in e['outline']])
         target=np.array([[pp[:,0].min(),210-pp[:,1].max(),0],
-                         [pp[:,0].max(),210-pp[:,1].min(),thickness]])
+                         [pp[:,0].max(),210-pp[:,1].min(),total_height]])
     else:
         poly=np.array(data[KEYS[name]]['outline'])
-        target=np.array([[0,0,0],[poly[:,0].max(),poly[:,1].max(),thickness]])
+        target=np.array([[0,0,0],[poly[:,0].max(),poly[:,1].max(),total_height]])
     assert np.max(np.abs(m.bounds-target))<.002,(name,m.bounds,target)
     errors=[]
     for z in [.05,thickness/2,thickness-.05]:
@@ -97,9 +127,26 @@ def verify_mesh(data,name):
         diameter_error=np.max(np.abs(expected[ri,2]-actual[ci,2]))
         assert center_error<.002 and diameter_error<.005,(name,z,center_error,diameter_error)
         errors.append({'z':z,'center_max_error':float(center_error),'diameter_max_error':float(diameter_error)})
+    profile_checks=[]
+    levels=[(.05,'base'),(1.0,'base'),(thickness-.05,'cap')]
+    if settings['ribs_enabled']:
+        levels += [(thickness+settings['root_height']/2,'root'),
+                   (total_height-.05,'top')]
+    for z,field in levels:
+        actual=section_shape(m,z);target_shape=expected_profile(data,config,name,field)
+        area_error=actual.symmetric_difference(target_shape).area
+        boundary_error=actual.boundary.hausdorff_distance(target_shape.boundary)
+        assert area_error < .8 and boundary_error < .06,(name,z,field,area_error,boundary_error)
+        if field in ['top','root']:
+            count=len(actual.geoms) if actual.geom_type=='MultiPolygon' else 1
+            assert count==component_count,(name,z,'disconnected ribs',count)
+        profile_checks.append({'z':z,'profile':field,'symmetric_difference_mm2':area_error,
+                               'boundary_max_error_mm':boundary_error})
     return {'file':str(path.relative_to(PROJECT)),'watertight':True,'winding_consistent':True,
-            'components':len(parts),'through_holes':len(expected),'euler_number':int(m.euler_number),
-            'bounds':m.bounds.tolist(),'volume_mm3':float(m.volume),'sections':errors,
+            'components':len(parts),'through_tool_holes':len(expected),'through_windows':window_count,
+            'euler_number':int(m.euler_number),'datum_plate_thickness':thickness,'total_height':total_height,
+            'bounds':m.bounds.tolist(),'volume_mm3':float(m.volume),'tool_sections':errors,
+            'profile_sections':profile_checks,
             'sha256':hashlib.sha256(path.read_bytes()).hexdigest()}
 
 
@@ -192,14 +239,18 @@ def verify_pdf(data):
 
 def main():
     data=json.loads((SOURCE/'geometry.json').read_text())
+    config=load_config()
+    check_scad_defaults(PROJECT/'3d/a5-leather-coin-case-templates.scad',data,config)
+    reinforcement_checks=validate(data,config)
     verify_geometry(data)
     report={'checked_at':datetime.now(ZoneInfo('Asia/Tokyo')).isoformat(),
             'units':'mm','physical_print_verified':False,'physical_leather_assembly_verified':False,
             'geometry':'PASS: fixed-pitch groups, shared seam stations, symmetry, A5 spacing',
-            'pdf':verify_pdf(data),'stl':{}}
+            'pdf':verify_pdf(data),'reinforcement':reinforcement_checks,'stl':{}}
     for name in FILES:
         report['stl'][name]=verify_mesh(data,name)
-        print(name,'PASS',report['stl'][name]['through_holes'],'through holes',flush=True)
+        print(name,'PASS',report['stl'][name]['through_tool_holes'],'tool holes,',
+              report['stl'][name]['through_windows'],'windows',flush=True)
     total=sum(report['stl'][n]['volume_mm3'] for n in KEYS)
     assert abs(total-report['stl']['layout']['volume_mm3'])<.2
     (SOURCE/'qa.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')

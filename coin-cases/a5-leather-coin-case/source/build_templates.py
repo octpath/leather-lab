@@ -9,6 +9,7 @@ import subprocess
 
 import numpy as np
 import trimesh
+from reinforcement import check_scad_defaults, load_config, part_spec, validate
 
 SOURCE = Path(__file__).resolve().parent
 PROJECT = SOURCE.parent
@@ -25,6 +26,9 @@ KEYS = {'A':'body','B':'liner','C':'gusset_left','D':'gusset_right'}
 
 def write_data():
     data = json.loads((SOURCE/'geometry.json').read_text())
+    reinforcement = load_config()
+    check_scad_defaults(SCAD,data,reinforcement)
+    validate(data,reinforcement)
     lines = ['// Generated from geometry.json by build_templates.py; units: mm.']
     for part,key in KEYS.items():
         d=data[key];letter=part.lower()
@@ -38,6 +42,9 @@ def write_data():
                 f'guides_{letter}':[[h['x'],h['y']] for h in d['holes']],
                 f'hardware_{letter}':hardware,
                 f'width_{letter}':max_x,f'height_{letter}':max_y}
+        spec=part_spec(data,reinforcement,part)
+        values[f'windows_{letter}']=spec['windows']
+        values[f'rib_segments_{letter}']=spec['rib_segments']
         if part=='A':values['attachment_a']=list(data['attachment_y'].values())
         for name,value in values.items():lines.append(f'{name} = {json.dumps(value,separators=(",",":"))};')
     poses=[[p['part'],p['translate'],p['rotation']] for p in data['layout']['poses']]

@@ -1,0 +1,226 @@
+{
+  "checked_at": "2026-10-17T13:04:46.830290+00:00",
+  "slicer": "PrusaSlicer-2.7.2+UNKNOWN based on Slic3r (with GUI support)",
+  "profile": "source/slice-check.ini",
+  "profile_sha256": "fd40d553011a11dfd38541a7125fa1ac88b674ebb6269fded82c46372dbb8693",
+  "scope": "Geometric path inspection only; not a P1S machine/material validation.",
+  "physical_print_verified": false,
+  "parts": {
+    "A": {
+      "base_layers": [
+        {
+          "z": 0.2,
+          "minimum_tool_radius_error_mm": -0.011060602325165259,
+          "narrow_web_paths": 4
+        },
+        {
+          "z": 1.0,
+          "minimum_tool_radius_error_mm": -0.012672966517022877,
+          "narrow_web_paths": 4
+        },
+        {
+          "z": 2.0,
+          "minimum_tool_radius_error_mm": -0.011101140834396284,
+          "narrow_web_paths": 4
+        }
+      ],
+      "rib_layers": [
+        {
+          "z": 2.4,
+          "rib_crossing_paths": 4,
+          "connected_deposition_regions": 1,
+          "section_profile": "root"
+        },
+        {
+          "z": 2.8,
+          "rib_crossing_paths": 4,
+          "connected_deposition_regions": 1,
+          "section_profile": "top"
+        },
+        {
+          "z": 3.4,
+          "rib_crossing_paths": 4,
+          "connected_deposition_regions": 1,
+          "section_profile": "top"
+        }
+      ],
+      "narrow_web_probe": [
+        [
+          3.000000000000014,
+          0.0
+        ],
+        [
+          3.000000000000004,
+          1.44
+        ]
+      ],
+      "rib_probe_center": [
+        37.48528137423857,
+        82.48528137423858
+      ],
+      "stl_sha256": "d2eed163f05d3b89b800839df719bc0a9b9de93b68626f080496611b0244b4bf"
+    },
+    "B": {
+      "base_layers": [
+        {
+          "z": 0.2,
+          "minimum_tool_radius_error_mm": -0.01106060232516326,
+          "narrow_web_paths": 7
+        },
+        {
+          "z": 1.0,
+          "minimum_tool_radius_error_mm": -0.012708404300166287,
+          "narrow_web_paths": 7
+        },
+        {
+          "z": 2.0,
+          "minimum_tool_radius_error_mm": -0.011101140834382517,
+          "narrow_web_paths": 7
+        }
+      ],
+      "rib_layers": [
+        {
+          "z": 2.4,
+          "rib_crossing_paths": 4,
+          "connected_deposition_regions": 1,
+          "section_profile": "root"
+        },
+        {
+          "z": 2.8,
+          "rib_crossing_paths": 4,
+          "connected_deposition_regions": 1,
+          "section_profile": "top"
+        },
+        {
+          "z": 3.4,
+          "rib_crossing_paths": 4,
+          "connected_deposition_regions": 1,
+          "section_profile": "top"
+        }
+      ],
+      "narrow_web_probe": [
+        [
+          71.26345596729058,
+          23.94974746830583
+        ],
+        [
+          69.53811542119541,
+          22.224406922210655
+        ]
+      ],
+      "rib_probe_center": [
+        20.0,
+        12.485281374238568
+      ],
+      "stl_sha256": "0439a089e1ef5f88cf70716a789f47126c22513ea6e34c9609dd08f3eb17e64e"
+    },
+    "C": {
+      "base_layers": [
+        {
+          "z": 0.2,
+          "minimum_tool_radius_error_mm": -0.011060602325164148,
+          "narrow_web_paths": 4
+        },
+        {
+          "z": 1.0,
+          "minimum_tool_radius_error_mm": -0.012631720019226855,
+          "narrow_web_paths": 4
+        },
+        {
+          "z": 2.0,
+          "minimum_tool_radius_error_mm": -0.011060602325164148,
+          "narrow_web_paths": 4
+        }
+      ],
+      "rib_layers": [
+        {
+          "z": 2.4,
+          "rib_crossing_paths": 4,
+          "connected_deposition_regions": 1,
+          "section_profile": "root"
+        },
+        {
+          "z": 2.8,
+          "rib_crossing_paths": 4,
+          "connected_deposition_regions": 1,
+          "section_profile": "top"
+        },
+        {
+          "z": 3.4,
+          "rib_crossing_paths": 4,
+          "connected_deposition_regions": 1,
+          "section_profile": "top"
+        }
+      ],
+      "narrow_web_probe": [
+        [
+          2.9999999999999996,
+          37.0
+        ],
+        [
+          3.0,
+          35.56
+        ]
+      ],
+      "rib_probe_center": [
+        20.0,
+        18.5
+      ],
+      "stl_sha256": "9947a0b562292f84bbb78143a931fee119312c855c74390f65b167936f0a0dbc"
+    },
+    "D": {
+      "base_layers": [
+        {
+          "z": 0.2,
+          "minimum_tool_radius_error_mm": -0.011072934710715021,
+          "narrow_web_paths": 4
+        },
+        {
+          "z": 1.0,
+          "minimum_tool_radius_error_mm": -0.012617941397416677,
+          "narrow_web_paths": 4
+        },
+        {
+          "z": 2.0,
+          "minimum_tool_radius_error_mm": -0.01112897095097598,
+          "narrow_web_paths": 4
+        }
+      ],
+      "rib_layers": [
+        {
+          "z": 2.4,
+          "rib_crossing_paths": 4,
+          "connected_deposition_regions": 1,
+          "section_profile": "root"
+        },
+        {
+          "z": 2.8,
+          "rib_crossing_paths": 4,
+          "connected_deposition_regions": 1,
+          "section_profile": "top"
+        },
+        {
+          "z": 3.4,
+          "rib_crossing_paths": 4,
+          "connected_deposition_regions": 1,
+          "section_profile": "top"
+        }
+      ],
+      "narrow_web_probe": [
+        [
+          78.66549289953257,
+          37.0
+        ],
+        [
+          78.66549289953257,
+          35.56
+        ]
+      ],
+      "rib_probe_center": [
+        61.665492899532566,
+        18.5
+      ],
+      "stl_sha256": "d39c389619522d69b2573e8f6bdae651b2e05cbe6fab2d0339c40d76da54923f"
+    }
+  }
+}
