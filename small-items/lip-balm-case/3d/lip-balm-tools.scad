@@ -53,8 +53,12 @@ base_cell = 14;
 
 /* [Mouth trim arch] */
 mouth_arch = true;
-arch_width_y = 2;
-arch_wall = 2;
+arch_width_y = 4;
+arch_wall = 3;
+arch_braces = true;
+arch_brace_w = 1.8;
+arch_brace_h = 6; // additional height above the 2 mm base at the root
+arch_brace_run = 10; // beyond the back of the arch
 
 /* [Hidden] */
 $fn = 128;
@@ -246,11 +250,38 @@ module mouth_arch_profile() {
             offset(r=leather_allowance+fit_clearance)
                 scale([mold_r,mold_depth]) circle(r=1);
         }
-        translate([-cut_r,0]) square([2*cut_r,mold_depth+10]);
+        translate([-cut_r,0])
+            square([2*cut_r,mold_depth+leather_allowance+fit_clearance+arch_wall+eps]);
     }
 }
 
+module mouth_arch_braces() {
+    // Two sloping webs overlap the arch and the outer seam rib in volume.
+    // They remain outside the leather opening and inside the cutting edge.
+    rib_outer = cut_r-0.65;
+    assert(arch_brace_w>=template_rib_w &&
+           rib_outer-arch_brace_w>opening_r,
+           "Arch braces must overlap the seam ribs and leave the opening clear.");
+    assert(arch_brace_h>template_rib_h && arch_brace_run>0 &&
+           arch_width_y+arch_brace_run<straight);
+    for(s=[-1,1]) scale([s,1,1])
+        translate([rib_outer-arch_brace_w,0,0]) rotate([90,0,90])
+            linear_extrude(arch_brace_w)
+                polygon([
+                    [arch_width_y/4,plate_t],
+                    [arch_width_y/4,plate_t+arch_brace_h],
+                    [arch_width_y+arch_brace_run,plate_t+template_rib_h],
+                    [arch_width_y+arch_brace_run,plate_t]
+                ]);
+}
+
 module M3_trim() {
+    arch_top = mold_depth+leather_allowance+fit_clearance+arch_wall;
+    tool_top = max(plate_t+template_rib_h,
+                   mouth_arch ? arch_top : 0,
+                   mouth_arch && arch_braces ? plate_t+arch_brace_h : 0);
+    assert(arch_width_y>0 && arch_wall>0 && arch_wall<cut_r-opening_r,
+           "Arch wall must remain inside the cutting contour.");
     difference() {
         union() {
             linear_extrude(plate_t) u_band(cut_r,opening_r);
@@ -260,10 +291,12 @@ module M3_trim() {
             if(mouth_arch)
                 translate([0,arch_width_y,0]) rotate([90,0,0])
                     linear_extrude(arch_width_y) mouth_arch_profile();
+            if(mouth_arch && arch_braces) mouth_arch_braces();
         }
-        guide_holes(main_holes,-eps,plate_t+template_rib_h+2*eps);
-        // Keep the stitch-transfer barrels exactly plate_t high.
-        guide_holes(main_holes,plate_t,template_rib_h+eps,guide_d+1.2);
+        guide_holes(main_holes,-eps,plate_t+2*eps);
+        // Keep 1.1 mm barrels exactly plate_t high. Full-height upper relief
+        // keeps an awl accessible beside the thicker arch and its braces.
+        guide_holes(main_holes,plate_t,tool_top-plate_t+eps,guide_d+1.2);
     }
 }
 
