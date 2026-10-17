@@ -1,0 +1,252 @@
+{
+  "checked_at": "2026-10-17T18:36:52.763192+09:00",
+  "units": "mm",
+  "physical_print_verified": false,
+  "physical_leather_assembly_verified": false,
+  "geometry": "PASS: fixed-pitch groups, shared seam stations, symmetry, A5 spacing",
+  "pdf": {
+    "file": "pdf/a5-leather-coin-case-pattern.pdf",
+    "pages": 4,
+    "japanese_font": "Noto Sans JP Regular, embedded",
+    "cut_width_pt": 0.6,
+    "guide_width_pt": 0.35,
+    "point_diameter_mm": 0.4,
+    "attachment_width_pt": 0.5,
+    "attachment_dash_pt": [
+      4,
+      2,
+      1,
+      2
+    ],
+    "part_centers": [
+      {
+        "part": "A",
+        "centers": 96,
+        "max_error_mm": 1.9836715337629607e-05
+      },
+      {
+        "part": "B",
+        "centers": 28,
+        "max_error_mm": 1.638774758531068e-05
+      },
+      {
+        "part": "C",
+        "centers": 31,
+        "max_error_mm": 1.2503046979341143e-05
+      },
+      {
+        "part": "D",
+        "centers": 31,
+        "max_error_mm": 1.8314567271871998e-05
+      }
+    ],
+    "optional_A_and_B_snap_centers": [
+      [
+        105.00000241597492,
+        72.99999075995551
+      ],
+      [
+        105.00000241597492,
+        72.99999075995551
+      ]
+    ],
+    "sha256": "0696a9e5cd3b887a67d1ae21859affdda0659f774a7a5a8bc57568914c962dc9"
+  },
+  "stl": {
+    "A": {
+      "file": "3d/a-body-template.stl",
+      "watertight": true,
+      "winding_consistent": true,
+      "components": 1,
+      "through_holes": 98,
+      "euler_number": -194,
+      "bounds": [
+        [
+          0.0,
+          6.105683951318497e-06,
+          0.0
+        ],
+        [
+          74.97055053710938,
+          169.4852752685547,
+          2.0
+        ]
+      ],
+      "volume_mm3": 24926.457634017093,
+      "sections": [
+        {
+          "z": 0.05,
+          "center_max_error": 9.463702919676878e-07,
+          "diameter_max_error": 9.40634855659539e-05
+        },
+        {
+          "z": 1.0,
+          "center_max_error": 9.528048957012903e-07,
+          "diameter_max_error": 0.000963735995695103
+        },
+        {
+          "z": 1.95,
+          "center_max_error": 9.604485934696668e-07,
+          "diameter_max_error": 9.406348556639799e-05
+        }
+      ],
+      "sha256": "80a67b7de0db66073c2fb3ecbae078a860aa6bd21d5f2ae4cd17f6da6477f5d5"
+    },
+    "B": {
+      "file": "3d/b-flap-liner-template.stl",
+      "watertight": true,
+      "winding_consistent": true,
+      "components": 1,
+      "through_holes": 29,
+      "euler_number": -56,
+      "bounds": [
+        [
+          0.0,
+          6.105683951318497e-06,
+          0.0
+        ],
+        [
+          74.97055053710938,
+          30.485280990600586,
+          2.0
+        ]
+      ],
+      "volume_mm3": 4301.069889781215,
+      "sections": [
+        {
+          "z": 0.05,
+          "center_max_error": 8.83620093490229e-07,
+          "diameter_max_error": 5.478625983723617e-05
+        },
+        {
+          "z": 1.0,
+          "center_max_error": 8.898821631870943e-07,
+          "diameter_max_error": 0.0005620952445521965
+        },
+        {
+          "z": 1.95,
+          "center_max_error": 8.969337661291088e-07,
+          "diameter_max_error": 5.4786259835459816e-05
+        }
+      ],
+      "sha256": "d546bb8123b55faef0c9947eb212e5f8e4063d8a05a4b556022082eeed3ab866"
+    },
+    "C": {
+      "file": "3d/c-left-gusset-template.stl",
+      "watertight": true,
+      "winding_consistent": true,
+      "components": 1,
+      "through_holes": 31,
+      "euler_number": -60,
+      "bounds": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          81.66548156738281,
+          37.0,
+          2.0
+        ]
+      ],
+      "volume_mm3": 5496.28234131894,
+      "sections": [
+        {
+          "z": 0.05,
+          "center_max_error": 9.468079395999381e-07,
+          "diameter_max_error": 2.927213525505401e-05
+        },
+        {
+          "z": 1.0,
+          "center_max_error": 9.280811250278066e-07,
+          "diameter_max_error": 0.0002950052758154964
+        },
+        {
+          "z": 1.95,
+          "center_max_error": 9.696025851017826e-07,
+          "diameter_max_error": 2.927213526660033e-05
+        }
+      ],
+      "sha256": "26a896268191f871b97cb2ec26ed98677542c2e93067243f0bde77cc27f47ac8"
+    },
+    "D": {
+      "file": "3d/d-right-gusset-template.stl",
+      "watertight": true,
+      "winding_consistent": true,
+      "components": 1,
+      "through_holes": 31,
+      "euler_number": -60,
+      "bounds": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          81.66548156738281,
+          37.0,
+          2.0
+        ]
+      ],
+      "volume_mm3": 5496.282329578079,
+      "sections": [
+        {
+          "z": 0.05,
+          "center_max_error": 9.321433038116341e-07,
+          "diameter_max_error": 2.890726755522266e-05
+        },
+        {
+          "z": 1.0,
+          "center_max_error": 9.408469529090836e-07,
+          "diameter_max_error": 0.00029464049515737223
+        },
+        {
+          "z": 1.95,
+          "center_max_error": 9.506617488526798e-07,
+          "diameter_max_error": 2.8907267555000615e-05
+        }
+      ],
+      "sha256": "9d617cc5aafa6d7ebb17d8cdd0e0d2fa4619e25e07e5a66207e9baadcdf99fca"
+    },
+    "layout": {
+      "file": "3d/a5-leather-coin-case-templates.stl",
+      "watertight": true,
+      "winding_consistent": true,
+      "components": 4,
+      "through_holes": 189,
+      "euler_number": -370,
+      "bounds": [
+        [
+          3.0,
+          5.029443264007568,
+          0.0
+        ],
+        [
+          116.97056579589844,
+          207.0,
+          2.0
+        ]
+      ],
+      "volume_mm3": 40220.09325734499,
+      "sections": [
+        {
+          "z": 0.05,
+          "center_max_error": 6.802168907221882e-06,
+          "diameter_max_error": 9.416776653692338e-05
+        },
+        {
+          "z": 1.0,
+          "center_max_error": 6.802990657930131e-06,
+          "diameter_max_error": 0.0009638402516509714
+        },
+        {
+          "z": 1.95,
+          "center_max_error": 6.83235568777783e-06,
+          "diameter_max_error": 9.416776654402881e-05
+        }
+      ],
+      "sha256": "3ae85429e6345f4cbc196df78be4dc51cea705b84a85d3ef2514275440f0656f"
+    }
+  }
+}

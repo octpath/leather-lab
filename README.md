@@ -6,14 +6,14 @@ octのレザークラフト作品の型紙、3Dプリント用データ、製作
 
 | 中分類 | フォルダ | 収録作品 |
 | --- | --- | --- |
-| Coin Cases／コインケース | [coin-cases](coin-cases/) | 追加予定 |
+| Coin Cases／コインケース | [coin-cases](coin-cases/) | [A5 Leather Coin Case／A5サイズの革で作るコインケース](coin-cases/a5-leather-coin-case/) |
 | Wallets／ウォレット | [wallets](wallets/) | 追加予定 |
 | Small Items／小物 | [small-items](small-items/) | [Lip Balm Case／リップクリームケース](small-items/lip-balm-case/) |
 
 ## フォルダの方針
 
 - 中分類の直下に、作品名のフォルダを作ります。分類名は複数形、単体の作品名は単数形を基本とします。
-- 各作品に英語の正式名称を定め、日本語名とともに作品READMEへ記載します。今回の作品は**Lip Balm Case（リップクリームケース）**です。
+- 各作品に英語の正式名称を定め、日本語名とともに作品READMEへ記載します。
 - パスは英語・半角英数字の小文字とハイフンを基本とします。例：`small-items/lip-balm-case/pdf/lip-balm-case-pattern.pdf`。
 - `README.md`・`AGENTS.md`などの標準名、Pythonの`snake_case`、外部素材の元ファイル名は慣例を保ちます。
 - 作品の通し番号は付けません。作品名で識別します。

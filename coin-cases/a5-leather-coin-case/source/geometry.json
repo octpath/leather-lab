@@ -1,0 +1,1905 @@
+{
+  "units": "mm",
+  "parameters": {
+    "width": 74.97056274847714,
+    "cut": 10.242640687119286,
+    "allowance": 3.0,
+    "pitch": 4.0,
+    "liner_height": 30.485281374238568,
+    "body_height": 169.48528137423858,
+    "gusset_base": 64.0,
+    "gusset_front": 34.0,
+    "gusset_slope": 36.0,
+    "gusset_run": 11.832159566199232,
+    "gusset_width": 81.66549289953257,
+    "gusset_height": 37.0,
+    "attachment_gap": 1.5,
+    "liner_to_gusset_gap": 2.0
+  },
+  "attachment_y": {
+    "liner_bottom": 30.485281374238568,
+    "slope_start": 32.48528137423857,
+    "slope_end": 68.48528137423857,
+    "base_start": 69.98528137423857,
+    "base_end": 133.98528137423858,
+    "front_start": 135.48528137423858
+  },
+  "body": {
+    "outline": [
+      [
+        10.242640687119286,
+        0
+      ],
+      [
+        64.72792206135784,
+        0
+      ],
+      [
+        74.97056274847714,
+        10.242640687119286
+      ],
+      [
+        74.97056274847714,
+        169.48528137423858
+      ],
+      [
+        0,
+        169.48528137423858
+      ],
+      [
+        0,
+        10.242640687119286
+      ]
+    ],
+    "holes": [
+      {
+        "id": "flap_00",
+        "x": 3.0,
+        "y": 31.485281374238568,
+        "kind": "awl"
+      },
+      {
+        "id": "flap_01",
+        "x": 3.0,
+        "y": 27.485281374238568,
+        "kind": "stitch"
+      },
+      {
+        "id": "flap_02",
+        "x": 3.0,
+        "y": 23.485281374238568,
+        "kind": "stitch"
+      },
+      {
+        "id": "flap_03",
+        "x": 3.0,
+        "y": 19.485281374238568,
+        "kind": "stitch"
+      },
+      {
+        "id": "flap_04",
+        "x": 3.0,
+        "y": 15.485281374238568,
+        "kind": "stitch"
+      },
+      {
+        "id": "flap_05",
+        "x": 3.0,
+        "y": 11.485281374238568,
+        "kind": "awl"
+      },
+      {
+        "id": "flap_06",
+        "x": 5.82842712474619,
+        "y": 8.65685424949238,
+        "kind": "stitch"
+      },
+      {
+        "id": "flap_07",
+        "x": 8.65685424949238,
+        "y": 5.828427124746188,
+        "kind": "stitch"
+      },
+      {
+        "id": "flap_08",
+        "x": 11.485281374238571,
+        "y": 3.0,
+        "kind": "awl"
+      },
+      {
+        "id": "flap_09",
+        "x": 15.485281374238571,
+        "y": 3.0,
+        "kind": "stitch"
+      },
+      {
+        "id": "flap_10",
+        "x": 19.485281374238568,
+        "y": 3.0,
+        "kind": "stitch"
+      },
+      {
+        "id": "flap_11",
+        "x": 23.485281374238568,
+        "y": 3.0,
+        "kind": "stitch"
+      },
+      {
+        "id": "flap_12",
+        "x": 27.485281374238568,
+        "y": 3.0,
+        "kind": "stitch"
+      },
+      {
+        "id": "flap_13",
+        "x": 31.485281374238568,
+        "y": 3.0,
+        "kind": "stitch"
+      },
+      {
+        "id": "flap_14",
+        "x": 35.48528137423857,
+        "y": 3.0,
+        "kind": "stitch"
+      },
+      {
+        "id": "flap_15",
+        "x": 39.48528137423857,
+        "y": 3.0,
+        "kind": "stitch"
+      },
+      {
+        "id": "flap_16",
+        "x": 43.48528137423857,
+        "y": 3.0,
+        "kind": "stitch"
+      },
+      {
+        "id": "flap_17",
+        "x": 47.48528137423857,
+        "y": 3.0,
+        "kind": "stitch"
+      },
+      {
+        "id": "flap_18",
+        "x": 51.48528137423857,
+        "y": 3.0,
+        "kind": "stitch"
+      },
+      {
+        "id": "flap_19",
+        "x": 55.48528137423857,
+        "y": 3.0,
+        "kind": "stitch"
+      },
+      {
+        "id": "flap_20",
+        "x": 59.485281374238554,
+        "y": 3.0,
+        "kind": "stitch"
+      },
+      {
+        "id": "flap_21",
+        "x": 63.485281374238554,
+        "y": 3.0,
+        "kind": "awl"
+      },
+      {
+        "id": "flap_22",
+        "x": 66.31370849898475,
+        "y": 5.828427124746188,
+        "kind": "stitch"
+      },
+      {
+        "id": "flap_23",
+        "x": 69.14213562373095,
+        "y": 8.65685424949238,
+        "kind": "stitch"
+      },
+      {
+        "id": "flap_24",
+        "x": 71.97056274847714,
+        "y": 11.485281374238568,
+        "kind": "awl"
+      },
+      {
+        "id": "flap_25",
+        "x": 71.97056274847714,
+        "y": 15.485281374238568,
+        "kind": "stitch"
+      },
+      {
+        "id": "flap_26",
+        "x": 71.97056274847714,
+        "y": 19.485281374238568,
+        "kind": "stitch"
+      },
+      {
+        "id": "flap_27",
+        "x": 71.97056274847714,
+        "y": 23.485281374238568,
+        "kind": "stitch"
+      },
+      {
+        "id": "flap_28",
+        "x": 71.97056274847714,
+        "y": 27.485281374238568,
+        "kind": "stitch"
+      },
+      {
+        "id": "flap_29",
+        "x": 71.97056274847714,
+        "y": 31.485281374238568,
+        "kind": "awl"
+      },
+      {
+        "id": "L_front_0",
+        "group": "front",
+        "station": 32.0,
+        "x": 3.0,
+        "y": 167.48528137423858,
+        "kind": "awl"
+      },
+      {
+        "id": "L_front_1",
+        "group": "front",
+        "station": 28.0,
+        "x": 3.0,
+        "y": 163.48528137423858,
+        "kind": "stitch"
+      },
+      {
+        "id": "L_front_2",
+        "group": "front",
+        "station": 24.0,
+        "x": 3.0,
+        "y": 159.48528137423858,
+        "kind": "stitch"
+      },
+      {
+        "id": "L_front_3",
+        "group": "front",
+        "station": 20.0,
+        "x": 3.0,
+        "y": 155.48528137423858,
+        "kind": "stitch"
+      },
+      {
+        "id": "L_front_4",
+        "group": "front",
+        "station": 16.0,
+        "x": 3.0,
+        "y": 151.48528137423858,
+        "kind": "stitch"
+      },
+      {
+        "id": "L_front_5",
+        "group": "front",
+        "station": 12.0,
+        "x": 3.0,
+        "y": 147.48528137423858,
+        "kind": "stitch"
+      },
+      {
+        "id": "L_front_6",
+        "group": "front",
+        "station": 8.0,
+        "x": 3.0,
+        "y": 143.48528137423858,
+        "kind": "stitch"
+      },
+      {
+        "id": "L_front_7",
+        "group": "front",
+        "station": 4.0,
+        "x": 3.0,
+        "y": 139.48528137423858,
+        "kind": "stitch"
+      },
+      {
+        "id": "L_base_1",
+        "group": "base",
+        "station": 4,
+        "x": 3.0,
+        "y": 73.98528137423857,
+        "kind": "stitch"
+      },
+      {
+        "id": "L_base_2",
+        "group": "base",
+        "station": 8,
+        "x": 3.0,
+        "y": 77.98528137423857,
+        "kind": "stitch"
+      },
+      {
+        "id": "L_base_3",
+        "group": "base",
+        "station": 12,
+        "x": 3.0,
+        "y": 81.98528137423857,
+        "kind": "stitch"
+      },
+      {
+        "id": "L_base_4",
+        "group": "base",
+        "station": 16,
+        "x": 3.0,
+        "y": 85.98528137423857,
+        "kind": "stitch"
+      },
+      {
+        "id": "L_base_5",
+        "group": "base",
+        "station": 20,
+        "x": 3.0,
+        "y": 89.98528137423857,
+        "kind": "stitch"
+      },
+      {
+        "id": "L_base_6",
+        "group": "base",
+        "station": 24,
+        "x": 3.0,
+        "y": 93.98528137423857,
+        "kind": "stitch"
+      },
+      {
+        "id": "L_base_7",
+        "group": "base",
+        "station": 28,
+        "x": 3.0,
+        "y": 97.98528137423857,
+        "kind": "stitch"
+      },
+      {
+        "id": "L_base_8",
+        "group": "base",
+        "station": 32,
+        "x": 3.0,
+        "y": 101.98528137423857,
+        "kind": "stitch"
+      },
+      {
+        "id": "L_base_9",
+        "group": "base",
+        "station": 36,
+        "x": 3.0,
+        "y": 105.98528137423857,
+        "kind": "stitch"
+      },
+      {
+        "id": "L_base_10",
+        "group": "base",
+        "station": 40,
+        "x": 3.0,
+        "y": 109.98528137423857,
+        "kind": "stitch"
+      },
+      {
+        "id": "L_base_11",
+        "group": "base",
+        "station": 44,
+        "x": 3.0,
+        "y": 113.98528137423857,
+        "kind": "stitch"
+      },
+      {
+        "id": "L_base_12",
+        "group": "base",
+        "station": 48,
+        "x": 3.0,
+        "y": 117.98528137423857,
+        "kind": "stitch"
+      },
+      {
+        "id": "L_base_13",
+        "group": "base",
+        "station": 52,
+        "x": 3.0,
+        "y": 121.98528137423857,
+        "kind": "stitch"
+      },
+      {
+        "id": "L_base_14",
+        "group": "base",
+        "station": 56,
+        "x": 3.0,
+        "y": 125.98528137423857,
+        "kind": "stitch"
+      },
+      {
+        "id": "L_base_15",
+        "group": "base",
+        "station": 60,
+        "x": 3.0,
+        "y": 129.98528137423858,
+        "kind": "stitch"
+      },
+      {
+        "id": "L_slope_1",
+        "group": "slope",
+        "station": 32.0,
+        "x": 3.0,
+        "y": 64.48528137423857,
+        "kind": "stitch"
+      },
+      {
+        "id": "L_slope_2",
+        "group": "slope",
+        "station": 28.0,
+        "x": 3.0,
+        "y": 60.48528137423857,
+        "kind": "stitch"
+      },
+      {
+        "id": "L_slope_3",
+        "group": "slope",
+        "station": 24.0,
+        "x": 3.0,
+        "y": 56.48528137423857,
+        "kind": "stitch"
+      },
+      {
+        "id": "L_slope_4",
+        "group": "slope",
+        "station": 20.0,
+        "x": 3.0,
+        "y": 52.48528137423857,
+        "kind": "stitch"
+      },
+      {
+        "id": "L_slope_5",
+        "group": "slope",
+        "station": 16.0,
+        "x": 3.0,
+        "y": 48.48528137423857,
+        "kind": "stitch"
+      },
+      {
+        "id": "L_slope_6",
+        "group": "slope",
+        "station": 12.0,
+        "x": 3.0,
+        "y": 44.48528137423857,
+        "kind": "stitch"
+      },
+      {
+        "id": "L_slope_7",
+        "group": "slope",
+        "station": 8.0,
+        "x": 3.0,
+        "y": 40.48528137423857,
+        "kind": "stitch"
+      },
+      {
+        "id": "L_slope_8",
+        "group": "slope",
+        "station": 4.0,
+        "x": 3.0,
+        "y": 36.48528137423857,
+        "kind": "stitch"
+      },
+      {
+        "id": "L_base_start_body_only",
+        "x": 3.0,
+        "y": 69.23528137423857,
+        "kind": "awl"
+      },
+      {
+        "id": "L_base_end_body_only",
+        "x": 3.0,
+        "y": 134.73528137423858,
+        "kind": "awl"
+      },
+      {
+        "id": "R_front_0",
+        "group": "front",
+        "station": 32.0,
+        "x": 71.97056274847714,
+        "y": 167.48528137423858,
+        "kind": "awl"
+      },
+      {
+        "id": "R_front_1",
+        "group": "front",
+        "station": 28.0,
+        "x": 71.97056274847714,
+        "y": 163.48528137423858,
+        "kind": "stitch"
+      },
+      {
+        "id": "R_front_2",
+        "group": "front",
+        "station": 24.0,
+        "x": 71.97056274847714,
+        "y": 159.48528137423858,
+        "kind": "stitch"
+      },
+      {
+        "id": "R_front_3",
+        "group": "front",
+        "station": 20.0,
+        "x": 71.97056274847714,
+        "y": 155.48528137423858,
+        "kind": "stitch"
+      },
+      {
+        "id": "R_front_4",
+        "group": "front",
+        "station": 16.0,
+        "x": 71.97056274847714,
+        "y": 151.48528137423858,
+        "kind": "stitch"
+      },
+      {
+        "id": "R_front_5",
+        "group": "front",
+        "station": 12.0,
+        "x": 71.97056274847714,
+        "y": 147.48528137423858,
+        "kind": "stitch"
+      },
+      {
+        "id": "R_front_6",
+        "group": "front",
+        "station": 8.0,
+        "x": 71.97056274847714,
+        "y": 143.48528137423858,
+        "kind": "stitch"
+      },
+      {
+        "id": "R_front_7",
+        "group": "front",
+        "station": 4.0,
+        "x": 71.97056274847714,
+        "y": 139.48528137423858,
+        "kind": "stitch"
+      },
+      {
+        "id": "R_base_1",
+        "group": "base",
+        "station": 4,
+        "x": 71.97056274847714,
+        "y": 73.98528137423857,
+        "kind": "stitch"
+      },
+      {
+        "id": "R_base_2",
+        "group": "base",
+        "station": 8,
+        "x": 71.97056274847714,
+        "y": 77.98528137423857,
+        "kind": "stitch"
+      },
+      {
+        "id": "R_base_3",
+        "group": "base",
+        "station": 12,
+        "x": 71.97056274847714,
+        "y": 81.98528137423857,
+        "kind": "stitch"
+      },
+      {
+        "id": "R_base_4",
+        "group": "base",
+        "station": 16,
+        "x": 71.97056274847714,
+        "y": 85.98528137423857,
+        "kind": "stitch"
+      },
+      {
+        "id": "R_base_5",
+        "group": "base",
+        "station": 20,
+        "x": 71.97056274847714,
+        "y": 89.98528137423857,
+        "kind": "stitch"
+      },
+      {
+        "id": "R_base_6",
+        "group": "base",
+        "station": 24,
+        "x": 71.97056274847714,
+        "y": 93.98528137423857,
+        "kind": "stitch"
+      },
+      {
+        "id": "R_base_7",
+        "group": "base",
+        "station": 28,
+        "x": 71.97056274847714,
+        "y": 97.98528137423857,
+        "kind": "stitch"
+      },
+      {
+        "id": "R_base_8",
+        "group": "base",
+        "station": 32,
+        "x": 71.97056274847714,
+        "y": 101.98528137423857,
+        "kind": "stitch"
+      },
+      {
+        "id": "R_base_9",
+        "group": "base",
+        "station": 36,
+        "x": 71.97056274847714,
+        "y": 105.98528137423857,
+        "kind": "stitch"
+      },
+      {
+        "id": "R_base_10",
+        "group": "base",
+        "station": 40,
+        "x": 71.97056274847714,
+        "y": 109.98528137423857,
+        "kind": "stitch"
+      },
+      {
+        "id": "R_base_11",
+        "group": "base",
+        "station": 44,
+        "x": 71.97056274847714,
+        "y": 113.98528137423857,
+        "kind": "stitch"
+      },
+      {
+        "id": "R_base_12",
+        "group": "base",
+        "station": 48,
+        "x": 71.97056274847714,
+        "y": 117.98528137423857,
+        "kind": "stitch"
+      },
+      {
+        "id": "R_base_13",
+        "group": "base",
+        "station": 52,
+        "x": 71.97056274847714,
+        "y": 121.98528137423857,
+        "kind": "stitch"
+      },
+      {
+        "id": "R_base_14",
+        "group": "base",
+        "station": 56,
+        "x": 71.97056274847714,
+        "y": 125.98528137423857,
+        "kind": "stitch"
+      },
+      {
+        "id": "R_base_15",
+        "group": "base",
+        "station": 60,
+        "x": 71.97056274847714,
+        "y": 129.98528137423858,
+        "kind": "stitch"
+      },
+      {
+        "id": "R_slope_1",
+        "group": "slope",
+        "station": 32.0,
+        "x": 71.97056274847714,
+        "y": 64.48528137423857,
+        "kind": "stitch"
+      },
+      {
+        "id": "R_slope_2",
+        "group": "slope",
+        "station": 28.0,
+        "x": 71.97056274847714,
+        "y": 60.48528137423857,
+        "kind": "stitch"
+      },
+      {
+        "id": "R_slope_3",
+        "group": "slope",
+        "station": 24.0,
+        "x": 71.97056274847714,
+        "y": 56.48528137423857,
+        "kind": "stitch"
+      },
+      {
+        "id": "R_slope_4",
+        "group": "slope",
+        "station": 20.0,
+        "x": 71.97056274847714,
+        "y": 52.48528137423857,
+        "kind": "stitch"
+      },
+      {
+        "id": "R_slope_5",
+        "group": "slope",
+        "station": 16.0,
+        "x": 71.97056274847714,
+        "y": 48.48528137423857,
+        "kind": "stitch"
+      },
+      {
+        "id": "R_slope_6",
+        "group": "slope",
+        "station": 12.0,
+        "x": 71.97056274847714,
+        "y": 44.48528137423857,
+        "kind": "stitch"
+      },
+      {
+        "id": "R_slope_7",
+        "group": "slope",
+        "station": 8.0,
+        "x": 71.97056274847714,
+        "y": 40.48528137423857,
+        "kind": "stitch"
+      },
+      {
+        "id": "R_slope_8",
+        "group": "slope",
+        "station": 4.0,
+        "x": 71.97056274847714,
+        "y": 36.48528137423857,
+        "kind": "stitch"
+      },
+      {
+        "id": "R_base_start_body_only",
+        "x": 71.97056274847714,
+        "y": 69.23528137423857,
+        "kind": "awl"
+      },
+      {
+        "id": "R_base_end_body_only",
+        "x": 71.97056274847714,
+        "y": 134.73528137423858,
+        "kind": "awl"
+      }
+    ],
+    "snap": {
+      "x": 37.48528137423857,
+      "y": 157.48528137423858,
+      "diameter": 3.6,
+      "punch_no": 12
+    },
+    "optional_snap": {
+      "x": 37.48528137423857,
+      "y": 18,
+      "diameter": 2.1,
+      "punch_no": 7,
+      "optional": true
+    },
+    "seam_guide": [
+      [
+        3.0,
+        167.48528137423858
+      ],
+      [
+        3.0,
+        11.485281374238571
+      ],
+      [
+        11.485281374238571,
+        3.0
+      ],
+      [
+        63.48528137423856,
+        3.0
+      ],
+      [
+        71.97056274847714,
+        11.485281374238571
+      ],
+      [
+        71.97056274847714,
+        167.48528137423858
+      ]
+    ]
+  },
+  "liner": {
+    "outline": [
+      [
+        10.242640687119286,
+        0
+      ],
+      [
+        64.72792206135784,
+        0
+      ],
+      [
+        74.97056274847714,
+        10.242640687119286
+      ],
+      [
+        74.97056274847714,
+        30.485281374238568
+      ],
+      [
+        0,
+        30.485281374238568
+      ],
+      [
+        0,
+        10.242640687119286
+      ]
+    ],
+    "holes": [
+      {
+        "id": "flap_01",
+        "x": 3.0,
+        "y": 27.485281374238568,
+        "kind": "stitch"
+      },
+      {
+        "id": "flap_02",
+        "x": 3.0,
+        "y": 23.485281374238568,
+        "kind": "stitch"
+      },
+      {
+        "id": "flap_03",
+        "x": 3.0,
+        "y": 19.485281374238568,
+        "kind": "stitch"
+      },
+      {
+        "id": "flap_04",
+        "x": 3.0,
+        "y": 15.485281374238568,
+        "kind": "stitch"
+      },
+      {
+        "id": "flap_05",
+        "x": 3.0,
+        "y": 11.485281374238568,
+        "kind": "awl"
+      },
+      {
+        "id": "flap_06",
+        "x": 5.82842712474619,
+        "y": 8.65685424949238,
+        "kind": "stitch"
+      },
+      {
+        "id": "flap_07",
+        "x": 8.65685424949238,
+        "y": 5.828427124746188,
+        "kind": "stitch"
+      },
+      {
+        "id": "flap_08",
+        "x": 11.485281374238571,
+        "y": 3.0,
+        "kind": "awl"
+      },
+      {
+        "id": "flap_09",
+        "x": 15.485281374238571,
+        "y": 3.0,
+        "kind": "stitch"
+      },
+      {
+        "id": "flap_10",
+        "x": 19.485281374238568,
+        "y": 3.0,
+        "kind": "stitch"
+      },
+      {
+        "id": "flap_11",
+        "x": 23.485281374238568,
+        "y": 3.0,
+        "kind": "stitch"
+      },
+      {
+        "id": "flap_12",
+        "x": 27.485281374238568,
+        "y": 3.0,
+        "kind": "stitch"
+      },
+      {
+        "id": "flap_13",
+        "x": 31.485281374238568,
+        "y": 3.0,
+        "kind": "stitch"
+      },
+      {
+        "id": "flap_14",
+        "x": 35.48528137423857,
+        "y": 3.0,
+        "kind": "stitch"
+      },
+      {
+        "id": "flap_15",
+        "x": 39.48528137423857,
+        "y": 3.0,
+        "kind": "stitch"
+      },
+      {
+        "id": "flap_16",
+        "x": 43.48528137423857,
+        "y": 3.0,
+        "kind": "stitch"
+      },
+      {
+        "id": "flap_17",
+        "x": 47.48528137423857,
+        "y": 3.0,
+        "kind": "stitch"
+      },
+      {
+        "id": "flap_18",
+        "x": 51.48528137423857,
+        "y": 3.0,
+        "kind": "stitch"
+      },
+      {
+        "id": "flap_19",
+        "x": 55.48528137423857,
+        "y": 3.0,
+        "kind": "stitch"
+      },
+      {
+        "id": "flap_20",
+        "x": 59.485281374238554,
+        "y": 3.0,
+        "kind": "stitch"
+      },
+      {
+        "id": "flap_21",
+        "x": 63.485281374238554,
+        "y": 3.0,
+        "kind": "awl"
+      },
+      {
+        "id": "flap_22",
+        "x": 66.31370849898475,
+        "y": 5.828427124746188,
+        "kind": "stitch"
+      },
+      {
+        "id": "flap_23",
+        "x": 69.14213562373095,
+        "y": 8.65685424949238,
+        "kind": "stitch"
+      },
+      {
+        "id": "flap_24",
+        "x": 71.97056274847714,
+        "y": 11.485281374238568,
+        "kind": "awl"
+      },
+      {
+        "id": "flap_25",
+        "x": 71.97056274847714,
+        "y": 15.485281374238568,
+        "kind": "stitch"
+      },
+      {
+        "id": "flap_26",
+        "x": 71.97056274847714,
+        "y": 19.485281374238568,
+        "kind": "stitch"
+      },
+      {
+        "id": "flap_27",
+        "x": 71.97056274847714,
+        "y": 23.485281374238568,
+        "kind": "stitch"
+      },
+      {
+        "id": "flap_28",
+        "x": 71.97056274847714,
+        "y": 27.485281374238568,
+        "kind": "stitch"
+      }
+    ],
+    "snap": {
+      "x": 37.48528137423857,
+      "y": 18,
+      "diameter": 2.1,
+      "punch_no": 7
+    },
+    "seam_guide": [
+      [
+        3.0,
+        30.485281374238568
+      ],
+      [
+        3.0,
+        11.485281374238571
+      ],
+      [
+        11.485281374238571,
+        3.0
+      ],
+      [
+        63.48528137423856,
+        3.0
+      ],
+      [
+        71.97056274847714,
+        11.485281374238571
+      ],
+      [
+        71.97056274847714,
+        30.485281374238568
+      ]
+    ]
+  },
+  "gusset_left": {
+    "outline": [
+      [
+        0,
+        0
+      ],
+      [
+        78.83215956619924,
+        0
+      ],
+      [
+        81.66549289953257,
+        0.9860132971832694
+      ],
+      [
+        70.17647058823529,
+        34.0
+      ],
+      [
+        67.0,
+        34.0
+      ],
+      [
+        67.0,
+        37.0
+      ],
+      [
+        3.0,
+        37.0
+      ],
+      [
+        3.0,
+        34.0
+      ],
+      [
+        0,
+        34.0
+      ]
+    ],
+    "holes": [
+      {
+        "id": "front_0",
+        "group": "front",
+        "station": 32.0,
+        "x": 3.0,
+        "y": 2.0,
+        "kind": "awl"
+      },
+      {
+        "id": "front_1",
+        "group": "front",
+        "station": 28.0,
+        "x": 3.0,
+        "y": 6.0,
+        "kind": "stitch"
+      },
+      {
+        "id": "front_2",
+        "group": "front",
+        "station": 24.0,
+        "x": 3.0,
+        "y": 10.0,
+        "kind": "stitch"
+      },
+      {
+        "id": "front_3",
+        "group": "front",
+        "station": 20.0,
+        "x": 3.0,
+        "y": 14.0,
+        "kind": "stitch"
+      },
+      {
+        "id": "front_4",
+        "group": "front",
+        "station": 16.0,
+        "x": 3.0,
+        "y": 18.0,
+        "kind": "stitch"
+      },
+      {
+        "id": "front_5",
+        "group": "front",
+        "station": 12.0,
+        "x": 3.0,
+        "y": 22.0,
+        "kind": "stitch"
+      },
+      {
+        "id": "front_6",
+        "group": "front",
+        "station": 8.0,
+        "x": 3.0,
+        "y": 26.0,
+        "kind": "stitch"
+      },
+      {
+        "id": "front_7",
+        "group": "front",
+        "station": 4.0,
+        "x": 3.0,
+        "y": 30.0,
+        "kind": "stitch"
+      },
+      {
+        "id": "base_1",
+        "group": "base",
+        "station": 4,
+        "x": 7.0,
+        "y": 34.0,
+        "kind": "stitch"
+      },
+      {
+        "id": "base_2",
+        "group": "base",
+        "station": 8,
+        "x": 11.0,
+        "y": 34.0,
+        "kind": "stitch"
+      },
+      {
+        "id": "base_3",
+        "group": "base",
+        "station": 12,
+        "x": 15.0,
+        "y": 34.0,
+        "kind": "stitch"
+      },
+      {
+        "id": "base_4",
+        "group": "base",
+        "station": 16,
+        "x": 19.0,
+        "y": 34.0,
+        "kind": "stitch"
+      },
+      {
+        "id": "base_5",
+        "group": "base",
+        "station": 20,
+        "x": 23.0,
+        "y": 34.0,
+        "kind": "stitch"
+      },
+      {
+        "id": "base_6",
+        "group": "base",
+        "station": 24,
+        "x": 27.0,
+        "y": 34.0,
+        "kind": "stitch"
+      },
+      {
+        "id": "base_7",
+        "group": "base",
+        "station": 28,
+        "x": 31.0,
+        "y": 34.0,
+        "kind": "stitch"
+      },
+      {
+        "id": "base_8",
+        "group": "base",
+        "station": 32,
+        "x": 35.0,
+        "y": 34.0,
+        "kind": "stitch"
+      },
+      {
+        "id": "base_9",
+        "group": "base",
+        "station": 36,
+        "x": 39.0,
+        "y": 34.0,
+        "kind": "stitch"
+      },
+      {
+        "id": "base_10",
+        "group": "base",
+        "station": 40,
+        "x": 43.0,
+        "y": 34.0,
+        "kind": "stitch"
+      },
+      {
+        "id": "base_11",
+        "group": "base",
+        "station": 44,
+        "x": 47.0,
+        "y": 34.0,
+        "kind": "stitch"
+      },
+      {
+        "id": "base_12",
+        "group": "base",
+        "station": 48,
+        "x": 51.0,
+        "y": 34.0,
+        "kind": "stitch"
+      },
+      {
+        "id": "base_13",
+        "group": "base",
+        "station": 52,
+        "x": 55.0,
+        "y": 34.0,
+        "kind": "stitch"
+      },
+      {
+        "id": "base_14",
+        "group": "base",
+        "station": 56,
+        "x": 59.0,
+        "y": 34.0,
+        "kind": "stitch"
+      },
+      {
+        "id": "base_15",
+        "group": "base",
+        "station": 60,
+        "x": 63.0,
+        "y": 34.0,
+        "kind": "stitch"
+      },
+      {
+        "id": "slope_1",
+        "group": "slope",
+        "station": 32.0,
+        "x": 68.31468439624436,
+        "y": 30.22222222222222,
+        "kind": "stitch"
+      },
+      {
+        "id": "slope_2",
+        "group": "slope",
+        "station": 28.0,
+        "x": 69.62936879248872,
+        "y": 26.444444444444443,
+        "kind": "stitch"
+      },
+      {
+        "id": "slope_3",
+        "group": "slope",
+        "station": 24.0,
+        "x": 70.94405318873308,
+        "y": 22.666666666666664,
+        "kind": "stitch"
+      },
+      {
+        "id": "slope_4",
+        "group": "slope",
+        "station": 20.0,
+        "x": 72.25873758497744,
+        "y": 18.88888888888889,
+        "kind": "stitch"
+      },
+      {
+        "id": "slope_5",
+        "group": "slope",
+        "station": 16.0,
+        "x": 73.5734219812218,
+        "y": 15.11111111111111,
+        "kind": "stitch"
+      },
+      {
+        "id": "slope_6",
+        "group": "slope",
+        "station": 12.0,
+        "x": 74.88810637746616,
+        "y": 11.333333333333332,
+        "kind": "stitch"
+      },
+      {
+        "id": "slope_7",
+        "group": "slope",
+        "station": 8.0,
+        "x": 76.20279077371052,
+        "y": 7.555555555555557,
+        "kind": "stitch"
+      },
+      {
+        "id": "slope_8",
+        "group": "slope",
+        "station": 4.0,
+        "x": 77.51747516995488,
+        "y": 3.7777777777777786,
+        "kind": "stitch"
+      }
+    ],
+    "seam_guide": [
+      [
+        3.0,
+        0
+      ],
+      [
+        3.0,
+        34.0
+      ],
+      [
+        67.0,
+        34.0
+      ],
+      [
+        78.83215956619924,
+        0
+      ]
+    ]
+  },
+  "gusset_right": {
+    "outline": [
+      [
+        81.66549289953257,
+        0
+      ],
+      [
+        2.8333333333333286,
+        0
+      ],
+      [
+        0.0,
+        0.9860132971832694
+      ],
+      [
+        11.489022311297276,
+        34.0
+      ],
+      [
+        14.665492899532566,
+        34.0
+      ],
+      [
+        14.665492899532566,
+        37.0
+      ],
+      [
+        78.66549289953257,
+        37.0
+      ],
+      [
+        78.66549289953257,
+        34.0
+      ],
+      [
+        81.66549289953257,
+        34.0
+      ]
+    ],
+    "holes": [
+      {
+        "id": "front_0",
+        "group": "front",
+        "station": 32.0,
+        "x": 78.66549289953257,
+        "y": 2.0,
+        "kind": "awl"
+      },
+      {
+        "id": "front_1",
+        "group": "front",
+        "station": 28.0,
+        "x": 78.66549289953257,
+        "y": 6.0,
+        "kind": "stitch"
+      },
+      {
+        "id": "front_2",
+        "group": "front",
+        "station": 24.0,
+        "x": 78.66549289953257,
+        "y": 10.0,
+        "kind": "stitch"
+      },
+      {
+        "id": "front_3",
+        "group": "front",
+        "station": 20.0,
+        "x": 78.66549289953257,
+        "y": 14.0,
+        "kind": "stitch"
+      },
+      {
+        "id": "front_4",
+        "group": "front",
+        "station": 16.0,
+        "x": 78.66549289953257,
+        "y": 18.0,
+        "kind": "stitch"
+      },
+      {
+        "id": "front_5",
+        "group": "front",
+        "station": 12.0,
+        "x": 78.66549289953257,
+        "y": 22.0,
+        "kind": "stitch"
+      },
+      {
+        "id": "front_6",
+        "group": "front",
+        "station": 8.0,
+        "x": 78.66549289953257,
+        "y": 26.0,
+        "kind": "stitch"
+      },
+      {
+        "id": "front_7",
+        "group": "front",
+        "station": 4.0,
+        "x": 78.66549289953257,
+        "y": 30.0,
+        "kind": "stitch"
+      },
+      {
+        "id": "base_1",
+        "group": "base",
+        "station": 4,
+        "x": 74.66549289953257,
+        "y": 34.0,
+        "kind": "stitch"
+      },
+      {
+        "id": "base_2",
+        "group": "base",
+        "station": 8,
+        "x": 70.66549289953257,
+        "y": 34.0,
+        "kind": "stitch"
+      },
+      {
+        "id": "base_3",
+        "group": "base",
+        "station": 12,
+        "x": 66.66549289953257,
+        "y": 34.0,
+        "kind": "stitch"
+      },
+      {
+        "id": "base_4",
+        "group": "base",
+        "station": 16,
+        "x": 62.665492899532566,
+        "y": 34.0,
+        "kind": "stitch"
+      },
+      {
+        "id": "base_5",
+        "group": "base",
+        "station": 20,
+        "x": 58.665492899532566,
+        "y": 34.0,
+        "kind": "stitch"
+      },
+      {
+        "id": "base_6",
+        "group": "base",
+        "station": 24,
+        "x": 54.665492899532566,
+        "y": 34.0,
+        "kind": "stitch"
+      },
+      {
+        "id": "base_7",
+        "group": "base",
+        "station": 28,
+        "x": 50.665492899532566,
+        "y": 34.0,
+        "kind": "stitch"
+      },
+      {
+        "id": "base_8",
+        "group": "base",
+        "station": 32,
+        "x": 46.665492899532566,
+        "y": 34.0,
+        "kind": "stitch"
+      },
+      {
+        "id": "base_9",
+        "group": "base",
+        "station": 36,
+        "x": 42.665492899532566,
+        "y": 34.0,
+        "kind": "stitch"
+      },
+      {
+        "id": "base_10",
+        "group": "base",
+        "station": 40,
+        "x": 38.665492899532566,
+        "y": 34.0,
+        "kind": "stitch"
+      },
+      {
+        "id": "base_11",
+        "group": "base",
+        "station": 44,
+        "x": 34.665492899532566,
+        "y": 34.0,
+        "kind": "stitch"
+      },
+      {
+        "id": "base_12",
+        "group": "base",
+        "station": 48,
+        "x": 30.665492899532566,
+        "y": 34.0,
+        "kind": "stitch"
+      },
+      {
+        "id": "base_13",
+        "group": "base",
+        "station": 52,
+        "x": 26.665492899532566,
+        "y": 34.0,
+        "kind": "stitch"
+      },
+      {
+        "id": "base_14",
+        "group": "base",
+        "station": 56,
+        "x": 22.665492899532566,
+        "y": 34.0,
+        "kind": "stitch"
+      },
+      {
+        "id": "base_15",
+        "group": "base",
+        "station": 60,
+        "x": 18.665492899532566,
+        "y": 34.0,
+        "kind": "stitch"
+      },
+      {
+        "id": "slope_1",
+        "group": "slope",
+        "station": 32.0,
+        "x": 13.350808503288206,
+        "y": 30.22222222222222,
+        "kind": "stitch"
+      },
+      {
+        "id": "slope_2",
+        "group": "slope",
+        "station": 28.0,
+        "x": 12.036124107043847,
+        "y": 26.444444444444443,
+        "kind": "stitch"
+      },
+      {
+        "id": "slope_3",
+        "group": "slope",
+        "station": 24.0,
+        "x": 10.721439710799487,
+        "y": 22.666666666666664,
+        "kind": "stitch"
+      },
+      {
+        "id": "slope_4",
+        "group": "slope",
+        "station": 20.0,
+        "x": 9.406755314555127,
+        "y": 18.88888888888889,
+        "kind": "stitch"
+      },
+      {
+        "id": "slope_5",
+        "group": "slope",
+        "station": 16.0,
+        "x": 8.092070918310768,
+        "y": 15.11111111111111,
+        "kind": "stitch"
+      },
+      {
+        "id": "slope_6",
+        "group": "slope",
+        "station": 12.0,
+        "x": 6.777386522066408,
+        "y": 11.333333333333332,
+        "kind": "stitch"
+      },
+      {
+        "id": "slope_7",
+        "group": "slope",
+        "station": 8.0,
+        "x": 5.462702125822048,
+        "y": 7.555555555555557,
+        "kind": "stitch"
+      },
+      {
+        "id": "slope_8",
+        "group": "slope",
+        "station": 4.0,
+        "x": 4.148017729577688,
+        "y": 3.7777777777777786,
+        "kind": "stitch"
+      }
+    ],
+    "seam_guide": [
+      [
+        78.66549289953257,
+        0
+      ],
+      [
+        78.66549289953257,
+        34.0
+      ],
+      [
+        14.665492899532566,
+        34.0
+      ],
+      [
+        2.8333333333333286,
+        0
+      ]
+    ]
+  },
+  "body_only_awl_transition_intervals": [
+    4.75,
+    5.0
+  ],
+  "layout": {
+    "sheet": [
+      148,
+      210
+    ],
+    "minimum_part_gap": 2,
+    "parts": [
+      {
+        "label": "BODY",
+        "outline": [
+          [
+            13.242640687119286,
+            3
+          ],
+          [
+            67.72792206135784,
+            3
+          ],
+          [
+            77.97056274847714,
+            13.242640687119286
+          ],
+          [
+            77.97056274847714,
+            172.48528137423858
+          ],
+          [
+            3,
+            172.48528137423858
+          ],
+          [
+            3,
+            13.242640687119286
+          ]
+        ]
+      },
+      {
+        "label": "LINER",
+        "outline": [
+          [
+            13.242640687119286,
+            174.48528137423858
+          ],
+          [
+            67.72792206135784,
+            174.48528137423858
+          ],
+          [
+            77.97056274847714,
+            184.72792206135787
+          ],
+          [
+            77.97056274847714,
+            204.97056274847716
+          ],
+          [
+            3,
+            204.97056274847716
+          ],
+          [
+            3,
+            184.72792206135787
+          ]
+        ]
+      },
+      {
+        "label": "GUSSET L",
+        "outline": [
+          [
+            116.97056274847714,
+            3
+          ],
+          [
+            116.97056274847714,
+            81.83215956619924
+          ],
+          [
+            115.98454945129387,
+            84.66549289953257
+          ],
+          [
+            82.97056274847714,
+            73.17647058823529
+          ],
+          [
+            82.97056274847714,
+            70.0
+          ],
+          [
+            79.97056274847714,
+            70.0
+          ],
+          [
+            79.97056274847714,
+            6.0
+          ],
+          [
+            82.97056274847714,
+            6.0
+          ],
+          [
+            82.97056274847714,
+            3
+          ]
+        ]
+      },
+      {
+        "label": "GUSSET R",
+        "outline": [
+          [
+            116.97056274847714,
+            168.33098579906513
+          ],
+          [
+            116.97056274847714,
+            89.4988262328659
+          ],
+          [
+            115.98454945129387,
+            86.66549289953257
+          ],
+          [
+            82.97056274847714,
+            98.15451521082984
+          ],
+          [
+            82.97056274847714,
+            101.33098579906513
+          ],
+          [
+            79.97056274847714,
+            101.33098579906513
+          ],
+          [
+            79.97056274847714,
+            165.33098579906513
+          ],
+          [
+            82.97056274847714,
+            165.33098579906513
+          ],
+          [
+            82.97056274847714,
+            168.33098579906513
+          ]
+        ]
+      }
+    ],
+    "occupied_box": [
+      3,
+      3,
+      116.97056274847714,
+      204.97056274847716
+    ],
+    "poses": [
+      {
+        "part": "A",
+        "translate": [
+          3,
+          37.51471862576142
+        ],
+        "rotation": 0
+      },
+      {
+        "part": "B",
+        "translate": [
+          3,
+          5.02943725152285
+        ],
+        "rotation": 0
+      },
+      {
+        "part": "C",
+        "translate": [
+          79.97056274847714,
+          207
+        ],
+        "rotation": -90
+      },
+      {
+        "part": "D",
+        "translate": [
+          79.97056274847714,
+          123.33450710046743
+        ],
+        "rotation": -90
+      }
+    ]
+  },
+  "notes": [
+    "The approved leather cut outlines and all sewing centers are shared by the PDF and CAD templates.",
+    "The tool pitch is exactly 4 mm within each straight sewing section; body-only awl transitions at attachment gaps are 4.75 or 5 mm.",
+    "The optional flap snap in A shares the exact center with the 7-no. snap in B.",
+    "Guide circles in CAD are transfer holes, not the final leather stitch-hole diameter.",
+    "A attachment lines are shallow markings on the top face; the bottom leather-contact face stays flat.",
+    "This revised pattern and its CAD templates have not yet been verified by physical printing or leather assembly."
+  ],
+  "name": {
+    "english": "A5 Leather Coin Case",
+    "japanese": "A5サイズの革で作るコインケース"
+  },
+  "coordinates": "mm; origin at the top-left, x to the right, y downward; CAD converts y to upward.",
+  "pdf": {
+    "pages": 4,
+    "page_size": [
+      210,
+      297
+    ],
+    "parts": [
+      {
+        "key": "body",
+        "part": "A",
+        "page": 2,
+        "origin": [
+          67.51471862576143,
+          55
+        ]
+      },
+      {
+        "key": "liner",
+        "part": "B",
+        "page": 3,
+        "origin": [
+          67.51471862576143,
+          55
+        ]
+      },
+      {
+        "key": "gusset_left",
+        "part": "C",
+        "page": 3,
+        "origin": [
+          18.334507100467434,
+          145
+        ]
+      },
+      {
+        "key": "gusset_right",
+        "part": "D",
+        "page": 3,
+        "origin": [
+          110.0,
+          145
+        ]
+      }
+    ]
+  },
+  "printing": {
+    "printer": "Bambu Lab P1S",
+    "nozzle_diameter": 0.4,
+    "plate_thickness": 2.0,
+    "guide_diameter": 1.1,
+    "snap7_diameter": 2.1,
+    "snap12_diameter": 3.6,
+    "include_optional_flap_snap": true,
+    "engrave_attachment_lines": true,
+    "attachment_engraving_width": 0.6,
+    "attachment_engraving_depth": 0.3
+  }
+}
