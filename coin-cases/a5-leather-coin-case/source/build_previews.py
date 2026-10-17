@@ -80,7 +80,7 @@ def templates_preview():
     ax.set(xlim=(-3, 151), ylim=(-3, 213), aspect='equal')
     ax.axis('off')
     fig.text(0.09, 0.95, 'A5 LEATHER COIN CASE', fontproperties=font, fontsize=17, color='#333333')
-    fig.text(0.09, 0.916, '3D型紙・4枚一括配置', fontproperties=font, fontsize=12, color='#555555')
+    fig.text(0.09, 0.916, '3D型紙・個別4パーツ（参考配置）', fontproperties=font, fontsize=12, color='#555555')
     lines = [
         '板厚 2mm  /  位置写し穴 直径1.1mm',
         'ホック穴：7号 直径2.1mm・12号 直径3.6mm',

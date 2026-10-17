@@ -7,6 +7,8 @@ A5（148×210mm）の革1枚から、本体・かぶせ裏・左右のマチを�
 
 ## ファイル
 
+3D型紙は、A・B・C・Dをそれぞれ独立したSTLで配布します。必要なパーツをスライサーへ読み込み、配置して印刷してください。
+
 | 用途 | ファイル |
 | --- | --- |
 | 原寸型紙PDF（全4ページ） | [a5-leather-coin-case-pattern.pdf](pdf/a5-leather-coin-case-pattern.pdf) |
@@ -14,13 +16,14 @@ A5（148×210mm）の革1枚から、本体・かぶせ裏・左右のマチを�
 | B・かぶせ裏の3D型紙 | [b-flap-liner-template.stl](3d/b-flap-liner-template.stl) |
 | C・左マチの3D型紙 | [c-left-gusset-template.stl](3d/c-left-gusset-template.stl) |
 | D・右マチの3D型紙 | [d-right-gusset-template.stl](3d/d-right-gusset-template.stl) |
-| 4枚を配置した一括印刷用STL | [a5-leather-coin-case-templates.stl](3d/a5-leather-coin-case-templates.stl) |
 | 編集用OpenSCAD | [a5-leather-coin-case-templates.scad](3d/a5-leather-coin-case-templates.scad) |
 | 3D型紙の設定・使い方 | [3d/README.md](3d/README.md) |
 | 共通形状データと生成元 | [source/README.md](source/README.md) |
 | 数値検証結果 | [source/qa.json](source/qa.json) |
 
-![3D型紙の配置](images/3d-templates.png)
+![個別STL4パーツの参考配置](images/3d-templates.png)
+
+[参考：4枚を並べた一括STL](3d/a5-leather-coin-case-templates.stl)もあります。通常は上表の個別4ファイルを使います。
 
 [PDFのプレビュー](images/pattern-preview.png)
 

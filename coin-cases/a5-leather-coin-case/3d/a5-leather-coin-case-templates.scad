@@ -2,7 +2,7 @@
 // Canonical cut outlines and centers: ../source/geometry.json.
 include <../source/template-data.scad>
 
-part = "layout"; // [layout,A,B,C,D]
+part = "A"; // [A,B,C,D,layout]
 plate_t = 2;
 guide_d = 1.1;
 snap7_d = 2.1;

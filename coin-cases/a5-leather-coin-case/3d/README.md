@@ -2,6 +2,7 @@
 
 裁断のケガキと、菱目打ち・丸錐・ホックの位置写しに使う平板型紙です。
 底面はz=0の平面です。単位はmm、外形と穴中心は[PDF](../pdf/a5-leather-coin-case-pattern.pdf)と共通です。
+通常は、以下の個別STLを1パーツずつ使います。
 
 ## ファイル
 
@@ -11,11 +12,10 @@
 | [b-flap-liner-template.stl](b-flap-liner-template.stl) | B・かぶせ裏 |
 | [c-left-gusset-template.stl](c-left-gusset-template.stl) | C・左マチ |
 | [d-right-gusset-template.stl](d-right-gusset-template.stl) | D・右マチ |
-| [a5-leather-coin-case-templates.stl](a5-leather-coin-case-templates.stl) | 4枚の一括配置 |
 | [a5-leather-coin-case-templates.scad](a5-leather-coin-case-templates.scad) | 編集・再出力用OpenSCAD |
 
-一括STLは4個の独立した板を配置したものです。外接寸法は約113.97×201.97×2mmです。
-個別STLも、一括STLも底面を下にして印刷します。
+必要な個別STLをスライサーへ読み込み、底面を下にして配置・印刷します。
+参考用の[一括配置STL](a5-leather-coin-case-templates.stl)は、4個の独立した板を並べたものです。外接寸法は約113.97×201.97×2mmです。
 
 ## 既定値
 
@@ -46,7 +46,7 @@
 ## OpenSCAD
 
 `part`を`A` / `B` / `C` / `D` / `layout`から選び、F6でレンダーしてSTLへ出力します。
-`layout`は一括印刷用の配置です。Aのかぶせ側の穴を型紙にも設けない場合は、`include_optional_flap_snap=false`にします。
+初期表示は`A`です。`layout`は参考用の一括配置です。Aのかぶせ側の穴を型紙にも設けない場合は、`include_optional_flap_snap=false`にします。
 
 板厚・ガイド穴径はパラメーターで変更できます。裁断輪郭と穴中心の編集は[geometry.json](../source/geometry.json)で行い、[再生成手順](../source/README.md)に従います。
 
