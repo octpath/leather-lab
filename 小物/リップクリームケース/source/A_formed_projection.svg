@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="31.569812886mm" height="66.784906443mm" viewBox="0 0 31.569812886 66.784906443">
+<title>A 成形後・投影外形</title>
+<desc>Dimensions in millimetres. Cut outlines black; hole centres orange. See PDF and geometry.json for specified snap punch diameters.</desc>
+<path d="M 0 0 H 31.569812886 V 51.000000000 A 15.784906443 15.784906443 0 0 1 0 51.000000000 Z" fill="none" stroke="#1F1F1F" stroke-width="0.211666667"/>
+<circle cx="3.000000000" cy="3.000000000" r="0.2" fill="#A34D0F"/>
+<circle cx="3.000000000" cy="7.000000000" r="0.2" fill="#A34D0F"/>
+<circle cx="3.000000000" cy="11.000000000" r="0.2" fill="#A34D0F"/>
+<circle cx="3.000000000" cy="15.000000000" r="0.2" fill="#A34D0F"/>
+<circle cx="3.000000000" cy="19.000000000" r="0.2" fill="#A34D0F"/>
+<circle cx="3.000000000" cy="23.000000000" r="0.2" fill="#A34D0F"/>
+<circle cx="3.000000000" cy="27.000000000" r="0.2" fill="#A34D0F"/>
+<circle cx="3.000000000" cy="31.000000000" r="0.2" fill="#A34D0F"/>
+<circle cx="3.000000000" cy="35.000000000" r="0.2" fill="#A34D0F"/>
+<circle cx="3.000000000" cy="39.000000000" r="0.2" fill="#A34D0F"/>
+<circle cx="3.000000000" cy="43.000000000" r="0.2" fill="#A34D0F"/>
+<circle cx="3.000000000" cy="47.000000000" r="0.2" fill="#A34D0F"/>
+<circle cx="3.000000000" cy="51.000000000" r="0.2" fill="#A34D0F"/>
+<circle cx="3.625737860" cy="54.950753362" r="0.2" fill="#A34D0F"/>
+<circle cx="5.441699859" cy="58.514779459" r="0.2" fill="#A34D0F"/>
+<circle cx="8.270126984" cy="61.343206584" r="0.2" fill="#A34D0F"/>
+<circle cx="11.834153081" cy="63.159168583" r="0.2" fill="#A34D0F"/>
+<circle cx="15.784906443" cy="63.784906443" r="0.2" fill="#A34D0F"/>
+<circle cx="19.735659805" cy="63.159168583" r="0.2" fill="#A34D0F"/>
+<circle cx="23.299685902" cy="61.343206584" r="0.2" fill="#A34D0F"/>
+<circle cx="26.128113027" cy="58.514779459" r="0.2" fill="#A34D0F"/>
+<circle cx="27.944075026" cy="54.950753362" r="0.2" fill="#A34D0F"/>
+<circle cx="28.569812886" cy="51.000000000" r="0.2" fill="#A34D0F"/>
+<circle cx="28.569812886" cy="47.000000000" r="0.2" fill="#A34D0F"/>
+<circle cx="28.569812886" cy="43.000000000" r="0.2" fill="#A34D0F"/>
+<circle cx="28.569812886" cy="39.000000000" r="0.2" fill="#A34D0F"/>
+<circle cx="28.569812886" cy="35.000000000" r="0.2" fill="#A34D0F"/>
+<circle cx="28.569812886" cy="31.000000000" r="0.2" fill="#A34D0F"/>
+<circle cx="28.569812886" cy="27.000000000" r="0.2" fill="#A34D0F"/>
+<circle cx="28.569812886" cy="23.000000000" r="0.2" fill="#A34D0F"/>
+<circle cx="28.569812886" cy="19.000000000" r="0.2" fill="#A34D0F"/>
+<circle cx="28.569812886" cy="15.000000000" r="0.2" fill="#A34D0F"/>
+<circle cx="28.569812886" cy="11.000000000" r="0.2" fill="#A34D0F"/>
+<circle cx="28.569812886" cy="7.000000000" r="0.2" fill="#A34D0F"/>
+<circle cx="28.569812886" cy="3.000000000" r="0.2" fill="#A34D0F"/>
+</svg>

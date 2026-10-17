@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="31.569812886mm" height="166.784906443mm" viewBox="0 0 31.569812886 166.784906443">
+<title>B 背面兼フラップ</title>
+<desc>Dimensions in millimetres. Cut outlines black; hole centres orange. See PDF and geometry.json for specified snap punch diameters.</desc>
+<path d="M 0 15.784906443 A 15.784906443 15.784906443 0 0 1 31.569812886 15.784906443 V 151.000000000 A 15.784906443 15.784906443 0 0 1 0 151.000000000 Z" fill="none" stroke="#1F1F1F" stroke-width="0.211666667"/>
+<path d="M 3.000000000 103.000000000 V 151.000000000 A 12.784906443 12.784906443 0 0 0 28.569812886 151.000000000 V 103.000000000" fill="none" stroke="#A34D0F" stroke-width="0.123472222"/>
+<path d="M 0 100.0 H 31.569812886" stroke="#336E91" stroke-width="0.176388889" stroke-dasharray="1.411111111 0.705555556 0.352777778 0.705555556"/>
+<rect x="8.784906443" y="100.000000000" width="14.0" height="30.0" fill="none" stroke="#336E91" stroke-width="0.176388889" stroke-dasharray="1.411111111 0.705555556 0.352777778 0.705555556"/>
+<circle cx="3.000000000" cy="103.000000000" r="0.2" fill="#A34D0F"/>
+<circle cx="3.000000000" cy="107.000000000" r="0.2" fill="#A34D0F"/>
+<circle cx="3.000000000" cy="111.000000000" r="0.2" fill="#A34D0F"/>
+<circle cx="3.000000000" cy="115.000000000" r="0.2" fill="#A34D0F"/>
+<circle cx="3.000000000" cy="119.000000000" r="0.2" fill="#A34D0F"/>
+<circle cx="3.000000000" cy="123.000000000" r="0.2" fill="#A34D0F"/>
+<circle cx="3.000000000" cy="127.000000000" r="0.2" fill="#A34D0F"/>
+<circle cx="3.000000000" cy="131.000000000" r="0.2" fill="#A34D0F"/>
+<circle cx="3.000000000" cy="135.000000000" r="0.2" fill="#A34D0F"/>
+<circle cx="3.000000000" cy="139.000000000" r="0.2" fill="#A34D0F"/>
+<circle cx="3.000000000" cy="143.000000000" r="0.2" fill="#A34D0F"/>
+<circle cx="3.000000000" cy="147.000000000" r="0.2" fill="#A34D0F"/>
+<circle cx="3.000000000" cy="151.000000000" r="0.2" fill="#A34D0F"/>
+<circle cx="3.625737860" cy="154.950753362" r="0.2" fill="#A34D0F"/>
+<circle cx="5.441699859" cy="158.514779459" r="0.2" fill="#A34D0F"/>
+<circle cx="8.270126984" cy="161.343206584" r="0.2" fill="#A34D0F"/>
+<circle cx="11.834153081" cy="163.159168583" r="0.2" fill="#A34D0F"/>
+<circle cx="15.784906443" cy="163.784906443" r="0.2" fill="#A34D0F"/>
+<circle cx="19.735659805" cy="163.159168583" r="0.2" fill="#A34D0F"/>
+<circle cx="23.299685902" cy="161.343206584" r="0.2" fill="#A34D0F"/>
+<circle cx="26.128113027" cy="158.514779459" r="0.2" fill="#A34D0F"/>
+<circle cx="27.944075026" cy="154.950753362" r="0.2" fill="#A34D0F"/>
+<circle cx="28.569812886" cy="151.000000000" r="0.2" fill="#A34D0F"/>
+<circle cx="28.569812886" cy="147.000000000" r="0.2" fill="#A34D0F"/>
+<circle cx="28.569812886" cy="143.000000000" r="0.2" fill="#A34D0F"/>
+<circle cx="28.569812886" cy="139.000000000" r="0.2" fill="#A34D0F"/>
+<circle cx="28.569812886" cy="135.000000000" r="0.2" fill="#A34D0F"/>
+<circle cx="28.569812886" cy="131.000000000" r="0.2" fill="#A34D0F"/>
+<circle cx="28.569812886" cy="127.000000000" r="0.2" fill="#A34D0F"/>
+<circle cx="28.569812886" cy="123.000000000" r="0.2" fill="#A34D0F"/>
+<circle cx="28.569812886" cy="119.000000000" r="0.2" fill="#A34D0F"/>
+<circle cx="28.569812886" cy="115.000000000" r="0.2" fill="#A34D0F"/>
+<circle cx="28.569812886" cy="111.000000000" r="0.2" fill="#A34D0F"/>
+<circle cx="28.569812886" cy="107.000000000" r="0.2" fill="#A34D0F"/>
+<circle cx="28.569812886" cy="103.000000000" r="0.2" fill="#A34D0F"/>
+<path d="M 7.784906443 109.000000000 H 23.784906443" stroke="#A34D0F" stroke-width="0.123472222"/>
+<path d="M 7.784906443 127.000000000 H 23.784906443" stroke="#A34D0F" stroke-width="0.123472222"/>
+<circle cx="11.784906443" cy="109.000000000" r="0.2" fill="#A34D0F"/>
+<circle cx="15.784906443" cy="109.000000000" r="0.2" fill="#A34D0F"/>
+<circle cx="19.784906443" cy="109.000000000" r="0.2" fill="#A34D0F"/>
+<circle cx="11.784906443" cy="127.000000000" r="0.2" fill="#A34D0F"/>
+<circle cx="15.784906443" cy="127.000000000" r="0.2" fill="#A34D0F"/>
+<circle cx="19.784906443" cy="127.000000000" r="0.2" fill="#A34D0F"/>
+<circle cx="7.784906443" cy="109.000000000" r="0.4" fill="white" stroke="#A34D0F" stroke-width="0.123472222"/>
+<circle cx="7.784906443" cy="109.000000000" r="0.2" fill="#A34D0F"/>
+<circle cx="23.784906443" cy="109.000000000" r="0.4" fill="white" stroke="#A34D0F" stroke-width="0.123472222"/>
+<circle cx="23.784906443" cy="109.000000000" r="0.2" fill="#A34D0F"/>
+<circle cx="7.784906443" cy="127.000000000" r="0.4" fill="white" stroke="#A34D0F" stroke-width="0.123472222"/>
+<circle cx="7.784906443" cy="127.000000000" r="0.2" fill="#A34D0F"/>
+<circle cx="23.784906443" cy="127.000000000" r="0.4" fill="white" stroke="#A34D0F" stroke-width="0.123472222"/>
+<circle cx="23.784906443" cy="127.000000000" r="0.2" fill="#A34D0F"/>
+</svg>

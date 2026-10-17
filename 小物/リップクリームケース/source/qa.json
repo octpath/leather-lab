@@ -1,0 +1,19 @@
+{
+  "shared_main_hole_count": 35,
+  "adjacent_main_hole_center_distance_mm": [
+    3.999999999999997,
+    4.000000000000002
+  ],
+  "cut_edge_to_main_hole_center_mm": 3.0,
+  "bottom_arc_length_mm": 40.16496815815949,
+  "bottom_chord_sum_mm": 40.0,
+  "semiellipse_body_max_inscribed_circle_diameter_mm": 16.88129688729944,
+  "tab_rows_finished": 2,
+  "tab_row_pitch_including_back_only_awl_endpoints_mm": 4,
+  "back_only_awl_hole_count": 4,
+  "back_only_awl_hole_distance_outside_C_mm": 1.0,
+  "tab_short_return_mm": 12.0,
+  "tab_attachment_top_y_from_mouth_mm": 0.0,
+  "tab_folded_tip_edge_to_upper_row_mm": 3.0,
+  "physical_validation": "Trial required: leather stretch, shrinkage, bottom seating, flap, and actual hardware"
+}

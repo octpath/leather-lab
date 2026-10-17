@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="14.000000000mm" height="42.000000000mm" viewBox="0 0 14.000000000 42.000000000">
+<title>C Dカン留め</title>
+<desc>Dimensions in millimetres. Cut outlines black; hole centres orange. See PDF and geometry.json for specified snap punch diameters.</desc>
+<rect x="0" y="0" width="14.0" height="42.0" rx="2" fill="none" stroke="#1F1F1F" stroke-width="0.211666667"/>
+<path d="M 0 12.0 H 14.0" stroke="#336E91" stroke-width="0.176388889" stroke-dasharray="1.411111111 0.705555556 0.352777778 0.705555556"/>
+<path d="M 0 10.0 H 14.0" stroke="#336E91" stroke-width="0.176388889" stroke-dasharray="1.411111111 0.705555556 0.352777778 0.705555556"/>
+<path d="M 3 3 H 11" stroke="#A34D0F" stroke-width="0.123472222"/>
+<path d="M 3 21.0 H 11" stroke="#A34D0F" stroke-width="0.123472222"/>
+<path d="M 3 39.0 H 11" stroke="#A34D0F" stroke-width="0.123472222"/>
+<circle cx="3.000000000" cy="3.000000000" r="0.2" fill="#A34D0F"/>
+<circle cx="7.000000000" cy="3.000000000" r="0.2" fill="#A34D0F"/>
+<circle cx="11.000000000" cy="3.000000000" r="0.2" fill="#A34D0F"/>
+<circle cx="3.000000000" cy="21.000000000" r="0.2" fill="#A34D0F"/>
+<circle cx="7.000000000" cy="21.000000000" r="0.2" fill="#A34D0F"/>
+<circle cx="11.000000000" cy="21.000000000" r="0.2" fill="#A34D0F"/>
+<circle cx="3.000000000" cy="39.000000000" r="0.2" fill="#A34D0F"/>
+<circle cx="7.000000000" cy="39.000000000" r="0.2" fill="#A34D0F"/>
+<circle cx="11.000000000" cy="39.000000000" r="0.2" fill="#A34D0F"/>
+</svg>

@@ -1,0 +1,490 @@
+{
+  "units": "mm",
+  "status": "fixed_pdf",
+  "brand": "oct",
+  "leather_thickness_range": [
+    1.0,
+    1.5
+  ],
+  "lip_samples": [
+    {
+      "length": 77,
+      "diameter": 16
+    },
+    {
+      "length": 83,
+      "diameter": 15
+    },
+    {
+      "length": 67,
+      "diameter": 15
+    }
+  ],
+  "target_effective_insertion_depth": 55,
+  "coordinate_convention": "x from centreline; y downward from formed pocket mouth. Blank coordinates are separate.",
+  "stitch": {
+    "pitch_chord": 4.0,
+    "cut_edge_offset": 3.0,
+    "bottom_intervals": 10,
+    "bottom_seam_radius": 12.784906442999324,
+    "main_hole_centres": [
+      [
+        -12.784906442999324,
+        3
+      ],
+      [
+        -12.784906442999324,
+        7
+      ],
+      [
+        -12.784906442999324,
+        11
+      ],
+      [
+        -12.784906442999324,
+        15
+      ],
+      [
+        -12.784906442999324,
+        19
+      ],
+      [
+        -12.784906442999324,
+        23
+      ],
+      [
+        -12.784906442999324,
+        27
+      ],
+      [
+        -12.784906442999324,
+        31
+      ],
+      [
+        -12.784906442999324,
+        35
+      ],
+      [
+        -12.784906442999324,
+        39
+      ],
+      [
+        -12.784906442999324,
+        43
+      ],
+      [
+        -12.784906442999324,
+        47
+      ],
+      [
+        -12.784906442999324,
+        51
+      ],
+      [
+        -12.159168582838399,
+        54.95075336238055
+      ],
+      [
+        -10.343206583880212,
+        58.514779459134026
+      ],
+      [
+        -7.514779459134021,
+        61.34320658388022
+      ],
+      [
+        -3.95075336238055,
+        63.159168582838404
+      ],
+      [
+        7.828497376408747e-16,
+        63.78490644299932
+      ],
+      [
+        3.9507533623805515,
+        63.1591685828384
+      ],
+      [
+        7.514779459134023,
+        61.34320658388022
+      ],
+      [
+        10.343206583880214,
+        58.514779459134026
+      ],
+      [
+        12.159168582838399,
+        54.95075336238055
+      ],
+      [
+        12.784906442999324,
+        51.0
+      ],
+      [
+        12.784906442999324,
+        47.0
+      ],
+      [
+        12.784906442999324,
+        43.0
+      ],
+      [
+        12.784906442999324,
+        39.0
+      ],
+      [
+        12.784906442999324,
+        35.0
+      ],
+      [
+        12.784906442999324,
+        31.0
+      ],
+      [
+        12.784906442999324,
+        27.0
+      ],
+      [
+        12.784906442999324,
+        23.0
+      ],
+      [
+        12.784906442999324,
+        19.0
+      ],
+      [
+        12.784906442999324,
+        15.0
+      ],
+      [
+        12.784906442999324,
+        11.0
+      ],
+      [
+        12.784906442999324,
+        7.0
+      ],
+      [
+        12.784906442999324,
+        3.0
+      ]
+    ]
+  },
+  "front_formed": {
+    "cut_width": 31.569812885998648,
+    "cut_height": 66.78490644299933,
+    "cut_bottom_radius": 15.784906442999324,
+    "straight_length": 51.0,
+    "snap_centre": [
+      0,
+      12
+    ],
+    "snap_punch_number": 7,
+    "snap_punch_diameter": 2.1
+  },
+  "front_forming_blank": {
+    "width": 90,
+    "height": 120,
+    "mouth_reference_from_top": 20,
+    "snap_centre_from_top_left": [
+      45,
+      32
+    ],
+    "snap_punch_number": 7,
+    "snap_punch_diameter": 2.1,
+    "note": "Oversized blank, not a compensated developed skin. Install front snap before forming; datum registration required."
+  },
+  "trimming_guide_reference": {
+    "aperture_width": 31.569812885998648,
+    "aperture_height": 66.78490644299933,
+    "paper_template_included": false,
+    "note": "Reserved for a future 3D-printed trimming guide. No paper window template in this revision."
+  },
+  "forming_target_not_yet_manufactured": {
+    "projected_width": 20.569812885998648,
+    "projected_bottom_radius": 10.284906442999324,
+    "projected_straight_length": 51.0,
+    "depth": 18,
+    "body_section": "semiellipse against flat back; lower surface smoothly rounded",
+    "snap_relief_external_diameter": null,
+    "snap_relief_internal_diameter": null,
+    "snap_relief_depths": null,
+    "note": "Both inner and outer hardware need relief. Actual hardware dimensions unknown. No 3D file authored."
+  },
+  "back": {
+    "cut_width": 31.569812885998648,
+    "cut_height": 166.78490644299933,
+    "flap_extension_from_mouth": 100.0,
+    "provisional_flap_snap_centre": [
+      0,
+      -88.0
+    ],
+    "snap_punch": "No.12 / 3.6 mm; determine centre after forming with longest lip fitted",
+    "snap_punch_number": 12,
+    "snap_punch_diameter": 3.6,
+    "main_hole_centres": [
+      [
+        -12.784906442999324,
+        3
+      ],
+      [
+        -12.784906442999324,
+        7
+      ],
+      [
+        -12.784906442999324,
+        11
+      ],
+      [
+        -12.784906442999324,
+        15
+      ],
+      [
+        -12.784906442999324,
+        19
+      ],
+      [
+        -12.784906442999324,
+        23
+      ],
+      [
+        -12.784906442999324,
+        27
+      ],
+      [
+        -12.784906442999324,
+        31
+      ],
+      [
+        -12.784906442999324,
+        35
+      ],
+      [
+        -12.784906442999324,
+        39
+      ],
+      [
+        -12.784906442999324,
+        43
+      ],
+      [
+        -12.784906442999324,
+        47
+      ],
+      [
+        -12.784906442999324,
+        51
+      ],
+      [
+        -12.159168582838399,
+        54.95075336238055
+      ],
+      [
+        -10.343206583880212,
+        58.514779459134026
+      ],
+      [
+        -7.514779459134021,
+        61.34320658388022
+      ],
+      [
+        -3.95075336238055,
+        63.159168582838404
+      ],
+      [
+        7.828497376408747e-16,
+        63.78490644299932
+      ],
+      [
+        3.9507533623805515,
+        63.1591685828384
+      ],
+      [
+        7.514779459134023,
+        61.34320658388022
+      ],
+      [
+        10.343206583880214,
+        58.514779459134026
+      ],
+      [
+        12.159168582838399,
+        54.95075336238055
+      ],
+      [
+        12.784906442999324,
+        51.0
+      ],
+      [
+        12.784906442999324,
+        47.0
+      ],
+      [
+        12.784906442999324,
+        43.0
+      ],
+      [
+        12.784906442999324,
+        39.0
+      ],
+      [
+        12.784906442999324,
+        35.0
+      ],
+      [
+        12.784906442999324,
+        31.0
+      ],
+      [
+        12.784906442999324,
+        27.0
+      ],
+      [
+        12.784906442999324,
+        23.0
+      ],
+      [
+        12.784906442999324,
+        19.0
+      ],
+      [
+        12.784906442999324,
+        15.0
+      ],
+      [
+        12.784906442999324,
+        11.0
+      ],
+      [
+        12.784906442999324,
+        7.0
+      ],
+      [
+        12.784906442999324,
+        3.0
+      ]
+    ],
+    "tab_shared_hole_centres": [
+      [
+        -4.0,
+        9.0
+      ],
+      [
+        0.0,
+        9.0
+      ],
+      [
+        4.0,
+        9.0
+      ],
+      [
+        -4.0,
+        27.0
+      ],
+      [
+        0.0,
+        27.0
+      ],
+      [
+        4.0,
+        27.0
+      ]
+    ],
+    "tab_back_only_round_awl_centres": [
+      [
+        -8.0,
+        9.0
+      ],
+      [
+        8.0,
+        9.0
+      ],
+      [
+        -8.0,
+        27.0
+      ],
+      [
+        8.0,
+        27.0
+      ]
+    ],
+    "tab_back_only_awl_offset_outside_C": 1.0
+  },
+  "d_ring_tab": {
+    "width": 14.0,
+    "length": 42.0,
+    "corner_radius": 2,
+    "assumed_d_ring_inner_width": 15,
+    "assumed_d_ring_wire_diameter": null,
+    "blank_origin": "top-left of short skived tip",
+    "short_return_length": 12.0,
+    "long_leg_length": 30.0,
+    "skive_from_short_tip": 10.0,
+    "fold_reference_from_short_tip": 12.0,
+    "blank_hole_centres": [
+      [
+        3.0,
+        3.0
+      ],
+      [
+        7.0,
+        3.0
+      ],
+      [
+        11.0,
+        3.0
+      ],
+      [
+        3.0,
+        21.0
+      ],
+      [
+        7.0,
+        21.0
+      ],
+      [
+        11.0,
+        21.0
+      ],
+      [
+        3.0,
+        39.0
+      ],
+      [
+        7.0,
+        39.0
+      ],
+      [
+        11.0,
+        39.0
+      ]
+    ],
+    "finished_stitch_rows_blank_y": [
+      21.0,
+      39.0
+    ],
+    "attachment_top_y_from_mouth": 0.0,
+    "long_free_edge_y_from_mouth": 30.0,
+    "folded_short_tip_y_from_mouth": 12.0,
+    "note": "Two horizontal seams; only B has the four outside round-awl endpoints. Fit fold and overlapping holes with actual hardware."
+  },
+  "qa": {
+    "shared_main_hole_count": 35,
+    "adjacent_main_hole_center_distance_mm": [
+      3.999999999999997,
+      4.000000000000002
+    ],
+    "cut_edge_to_main_hole_center_mm": 3.0,
+    "bottom_arc_length_mm": 40.16496815815949,
+    "bottom_chord_sum_mm": 40.0,
+    "semiellipse_body_max_inscribed_circle_diameter_mm": 16.88129688729944,
+    "tab_rows_finished": 2,
+    "tab_row_pitch_including_back_only_awl_endpoints_mm": 4,
+    "back_only_awl_hole_count": 4,
+    "back_only_awl_hole_distance_outside_C_mm": 1.0,
+    "tab_short_return_mm": 12.0,
+    "tab_attachment_top_y_from_mouth_mm": 0.0,
+    "tab_folded_tip_edge_to_upper_row_mm": 3.0,
+    "physical_validation": "Trial required: leather stretch, shrinkage, bottom seating, flap, and actual hardware"
+  }
+}
