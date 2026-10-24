@@ -1,0 +1,152 @@
+{
+  "units": "mm",
+  "scope": "CAD geometry only; actual P1S slicing and physical strength are separate checks",
+  "M1": {
+    "sha256": "870b97f80bd7cbaa82a879142d971b595b9fb520a5e08049b6ff80501fb9ba70",
+    "closed_manifold": true,
+    "components": 1,
+    "triangles": 25222,
+    "bounds_mm": [
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        90.0,
+        120.0,
+        26.0
+      ]
+    ],
+    "volume_mm3": 87493.8477277234,
+    "snap_punch_number": 7,
+    "snap_mark_diameter_mm": 2.1,
+    "rear_passage_diameter_mm": 6,
+    "snap_centre_xy_mm": [
+      45.0,
+      32.0
+    ],
+    "snap_passage_checks": [
+      {
+        "z_mm": 10,
+        "diameter_mm": 6,
+        "centre_error_mm": 4.5756978560997045e-07
+      },
+      {
+        "z_mm": 20,
+        "diameter_mm": 6,
+        "centre_error_mm": 4.575546462838634e-07
+      },
+      {
+        "z_mm": 24.5,
+        "diameter_mm": 2.1,
+        "centre_error_mm": 2.1386618628252768e-07
+      },
+      {
+        "z_mm": 25.8,
+        "diameter_mm": 2.1,
+        "centre_error_mm": 2.2090417160690595e-07
+      }
+    ],
+    "old_hardware_recess_removed": true
+  },
+  "M3": {
+    "sha256": "75093a87844fe983cd8004d73e0b307d236110a309c794cc86bc9922cd51369b",
+    "closed_manifold": true,
+    "components": 1,
+    "triangles": 23360,
+    "bounds_mm": [
+      [
+        9.592413334758021e-06,
+        0.0,
+        0.0
+      ],
+      [
+        58.56980514526367,
+        88.28489685058594,
+        22.699951171875
+      ]
+    ],
+    "volume_mm3": 9692.650923736825,
+    "guide_checks": [
+      {
+        "z_mm": 0.2,
+        "guide_count": 35,
+        "diameter_mm": 1.1,
+        "max_centre_error_mm": 1.1165976972184929e-05
+      },
+      {
+        "z_mm": 1.0,
+        "guide_count": 35,
+        "diameter_mm": 1.1,
+        "max_centre_error_mm": 1.1191571669198702e-05
+      },
+      {
+        "z_mm": 1.9,
+        "guide_count": 35,
+        "diameter_mm": 1.1,
+        "max_centre_error_mm": 1.1223057838696297e-05
+      }
+    ],
+    "slit_width_mm": 1.5,
+    "slit_inner_edge_is_cut_line": true,
+    "seam_allowance_STL_range_mm": [
+      2.9953935934289295,
+      2.999992259265028
+    ],
+    "bottom_arc_continuous_degrees": 180,
+    "bottom_arc_samples": 361,
+    "minimum_half_slot_clearance_mm": 0.7447809997143382,
+    "straight_bridge_centres_from_mouth_mm": [
+      13,
+      29,
+      45
+    ],
+    "straight_bridge_width_mm": 3.0,
+    "tool_approach_diameter_checked_mm": 5,
+    "tool_approach_checks": [
+      {
+        "z_mm": 2.05,
+        "minimum_tool_clear_radius_mm": 3.0
+      },
+      {
+        "z_mm": 2.8,
+        "minimum_tool_clear_radius_mm": 3.0
+      },
+      {
+        "z_mm": 4.1,
+        "minimum_tool_clear_radius_mm": 2.9999999999999996
+      },
+      {
+        "z_mm": 5.1,
+        "minimum_tool_clear_radius_mm": 3.0
+      },
+      {
+        "z_mm": 6.1,
+        "minimum_tool_clear_radius_mm": 2.9999999999999996
+      },
+      {
+        "z_mm": 10.1,
+        "minimum_tool_clear_radius_mm": 3.0
+      },
+      {
+        "z_mm": 15.1,
+        "minimum_tool_clear_radius_mm": 3.4320416888879395
+      },
+      {
+        "z_mm": 20.1,
+        "minimum_tool_clear_radius_mm": 6.510062509264003
+      },
+      {
+        "z_mm": 22.1,
+        "minimum_tool_clear_radius_mm": 9.784708701885538
+      }
+    ],
+    "mouth_arch_y_from_mouth_mm": [
+      -4.0,
+      0
+    ]
+  },
+  "fixed_PDF_stitch_centres_and_cut_contour_preserved": true,
+  "physical_print_verified": false
+}

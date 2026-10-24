@@ -192,13 +192,13 @@
     ],
     "snap_punch_number": 7,
     "snap_punch_diameter": 2.1,
-    "note": "Oversized blank, not a compensated developed skin. Install front snap before forming; datum registration required."
+    "note": "Oversized blank, not a compensated developed skin. Form without hardware; mark snap centre through M1 rear access after drying, then remove tools and punch No.7 before fitting the snap. Blank centre is a reference only."
   },
   "trimming_guide_reference": {
     "aperture_width": 31.569812885998648,
     "aperture_height": 66.78490644299933,
     "paper_template_included": false,
-    "note": "Reserved for a future 3D-printed trimming guide. No paper window template in this revision."
+    "note": "Fixed cutting-contour reference for the inner edge of M3's cutting slots; not the outside dimensions of the enlarged frame. No paper window template."
   },
   "forming_target_not_yet_manufactured": {
     "projected_width": 20.569812885998648,
@@ -209,7 +209,7 @@
     "snap_relief_external_diameter": null,
     "snap_relief_internal_diameter": null,
     "snap_relief_depths": null,
-    "note": "Both inner and outer hardware need relief. Actual hardware dimensions unknown. No 3D file authored."
+    "note": "Legacy preliminary forming dimensions; current 3D SCAD is authoritative. Front snap is fitted after forming, with a rear marking passage instead of a hardware recess."
   },
   "back": {
     "cut_width": 31.569812885998648,

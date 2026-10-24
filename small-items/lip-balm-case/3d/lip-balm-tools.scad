@@ -5,14 +5,14 @@ Choose part below; F6, then File > Export > STL.
 
 M1 = male former and ribbed base
 M2 = wide U-shaped clamping frame (not a female cover)
-M3 = narrow trim / stitch-transfer frame, with a mouth arch
+M3 = outer reinforced frame, cutting slots and stitch-transfer guides
 A  = 90 x 120 rough-blank template
 B  = back + flap template
 C  = short-return D-ring tab template
 
 The fixed PDF cut contours and all stitch centres are retained.
-Mould dimensions, clearances and snap relief are TRIAL parameters.
-Snap relief is clearance for the INSIDE hardware only, not a punch hole.
+Mould dimensions and clearances are TRIAL parameters.
+Fit the front snap AFTER forming; mark its centre through the back of M1.
 PLA, P1S, 0.4 mm nozzle. Guide web / print tolerances need a physical check.
 */
 
@@ -37,9 +37,9 @@ leather_allowance = 1.5;
 fit_clearance = 0.2;
 mouth_extension = 8;
 
-/* [Inside snap relief: provisional, adjustable] */
-snap_relief_d = 14;
-snap_relief_depth = 3;
+/* [Rear snap-centre marking access] */
+snap_access_d = 6;
+snap_mark_guide_t = 2;
 
 /* [Structural frame] */
 press_band = 18;
@@ -55,10 +55,16 @@ base_cell = 14;
 mouth_arch = true;
 arch_width_y = 4;
 arch_wall = 3;
-arch_braces = true;
-arch_brace_w = 1.8;
-arch_brace_h = 6; // additional height above the 2 mm base at the root
-arch_brace_run = 10; // beyond the back of the arch
+arch_root_h = 6;
+
+/* [Outer trimming frame] */
+trim_slot_w = 1.5; // slot INNER edge is the fixed cutting contour
+trim_outer_band = 12;
+trim_rib_h = 3;
+trim_rib_w = 2.4;
+trim_bridge_w = 3;
+trim_bridge_overlap = 1.2;
+trim_bridge_y = [13,29,45]; // straight sides only; the bottom arc stays open
 
 /* [Hidden] */
 $fn = 128;
@@ -99,7 +105,7 @@ assert(min_guide_web>=0.45,
            " mm. Increase forming_to_seam, or reduce allowance/clearance after checking leather."));
 assert(press_band>=10);
 assert(base_t-base_pocket_depth>=3);
-assert(snap_relief_depth>0 && snap_relief_depth<mold_depth/2);
+assert(snap_access_d>stud_hole_d && snap_mark_guide_t>=plate_t);
 assert(guide_d<2);
 
 module round_rect(w,h,r=2) {
@@ -169,6 +175,18 @@ module former_raw() {
     }
 }
 
+module rear_snap_access() {
+    top = base_t+mold_depth;
+    taper_h = (snap_access_d-stud_hole_d)/2;
+    taper_z = top-snap_mark_guide_t-taper_h;
+    assert(taper_z>base_t);
+    translate([0,snap_y,-eps]) cylinder(d=snap_access_d,h=taper_z+eps);
+    translate([0,snap_y,taper_z])
+        cylinder(d1=snap_access_d,d2=stud_hole_d,h=taper_h);
+    translate([0,snap_y,top-snap_mark_guide_t-eps])
+        cylinder(d=stud_hole_d,h=snap_mark_guide_t+2*eps);
+}
+
 module M1_lower() {
     difference() {
         union() {
@@ -181,13 +199,8 @@ module M1_lower() {
         for(x=[-33.5:base_cell:22.5]) for(y=[-7.5:base_cell:76.5])
             translate([x,y,-eps]) linear_extrude(base_pocket_depth+eps)
                 round_rect(base_cell-base_rib_w,base_cell-base_rib_w,1.4);
-        translate([0,snap_y,base_t+mold_depth-snap_relief_depth])
-            cylinder(d=snap_relief_d,h=snap_relief_depth+1);
-        // Centre witness at the bottom of the adjustable relief.
-        shallow_line([-2,snap_y],[2,snap_y],0.5,
-                     base_t+mold_depth-snap_relief_depth,0.25);
-        shallow_line([0,snap_y-2],[0,snap_y+2],0.5,
-                     base_t+mold_depth-snap_relief_depth,0.25);
+        // The old 14 mm hardware recess is removed: form before fitting the snap.
+        rear_snap_access();
         shallow_line([-43,0],[-34,0],0.6,base_t,0.45);
         shallow_line([34,0],[43,0],0.6,base_t,0.45);
         engraved_text("M1",[0,91],5,base_t,0.5);
@@ -255,48 +268,74 @@ module mouth_arch_profile() {
     }
 }
 
-module mouth_arch_braces() {
-    // Two sloping webs overlap the arch and the outer seam rib in volume.
-    // They remain outside the leather opening and inside the cutting edge.
-    rib_outer = cut_r-0.65;
-    assert(arch_brace_w>=template_rib_w &&
-           rib_outer-arch_brace_w>opening_r,
-           "Arch braces must overlap the seam ribs and leave the opening clear.");
-    assert(arch_brace_h>template_rib_h && arch_brace_run>0 &&
-           arch_width_y+arch_brace_run<straight);
-    for(s=[-1,1]) scale([s,1,1])
-        translate([rib_outer-arch_brace_w,0,0]) rotate([90,0,90])
-            linear_extrude(arch_brace_w)
-                polygon([
-                    [arch_width_y/4,plate_t],
-                    [arch_width_y/4,plate_t+arch_brace_h],
-                    [arch_width_y+arch_brace_run,plate_t+template_rib_h],
-                    [arch_width_y+arch_brace_run,plate_t]
-                ]);
+// The datum face is y=0; the complete arch sits ABOVE the mouth (negative y).
+// Its feet are carried by the external frame, leaving every stitch guide clear.
+module mouth_arch_mounts() {
+    slot_outer = cut_r+trim_slot_w;
+    root_x = opening_r+arch_wall-1.6;
+    assert(root_x>opening_r && arch_root_h>plate_t);
+    for(s=[-1,1]) scale([s,1,1]) hull() {
+        translate([root_x,-arch_width_y,0]) cube([1.6,arch_width_y,arch_root_h]);
+        translate([slot_outer+2,-arch_width_y,0])
+            cube([trim_outer_band-4,arch_width_y,plate_t+trim_rib_h]);
+    }
+}
+
+module trim_bridges_2d() {
+    slot_outer = cut_r+trim_slot_w;
+    for(y=trim_bridge_y) for(s=[-1,1]) scale([s,1,1])
+        translate([cut_r-trim_bridge_overlap,y-trim_bridge_w/2])
+            square([trim_slot_w+2*trim_bridge_overlap,trim_bridge_w]);
+}
+
+module trim_outer_ribs_2d() {
+    slot_outer = cut_r+trim_slot_w;
+    ro = slot_outer+trim_outer_band;
+    intersection() {
+        u_band(ro,slot_outer,-mouth_extension);
+        union() {
+            u_band(ro-1,ro-1-trim_rib_w,-mouth_extension);
+            u_band(slot_outer+1.8+trim_rib_w,slot_outer+1.8,-mouth_extension);
+            for(y=trim_bridge_y) for(s=[-1,1]) scale([s,1,1])
+                translate([slot_outer+1.8,y-trim_rib_w/2])
+                    square([trim_outer_band-2.8,trim_rib_w]);
+        }
+    }
 }
 
 module M3_trim() {
-    arch_top = mold_depth+leather_allowance+fit_clearance+arch_wall;
-    tool_top = max(plate_t+template_rib_h,
-                   mouth_arch ? arch_top : 0,
-                   mouth_arch && arch_braces ? plate_t+arch_brace_h : 0);
-    assert(arch_width_y>0 && arch_wall>0 && arch_wall<cut_r-opening_r,
-           "Arch wall must remain inside the cutting contour.");
+    slot_outer = cut_r+trim_slot_w;
+    ro = slot_outer+trim_outer_band;
+    assert(trim_slot_w>=1 && trim_outer_band>=10 && trim_rib_w>=1.2);
+    assert(trim_bridge_overlap>0 && trim_bridge_overlap<seam_offset-guide_d/2);
+    assert(arch_width_y>0 && arch_width_y<=mouth_extension && arch_wall>0);
+    for(y=trim_bridge_y)
+        assert(y-trim_bridge_w/2>0 && y+trim_bridge_w/2<straight,
+               "Connectors must not interrupt the bottom semicircle.");
     difference() {
-        union() {
-            linear_extrude(plate_t) u_band(cut_r,opening_r);
-            if(template_ribs)
-                translate([0,0,plate_t]) linear_extrude(template_rib_h)
-                    u_band(cut_r-0.65,cut_r-0.65-template_rib_w,2);
-            if(mouth_arch)
-                translate([0,arch_width_y,0]) rotate([90,0,0])
-                    linear_extrude(arch_width_y) mouth_arch_profile();
-            if(mouth_arch && arch_braces) mouth_arch_braces();
+      union() {
+        // Cut the 35 holes in 2D: the complete guide land stays exactly 2 mm high.
+        linear_extrude(plate_t) difference() {
+            union() {
+                u_band(cut_r,opening_r);
+                u_band(ro,slot_outer,-mouth_extension);
+                trim_bridges_2d();
+            }
+            for(p=main_holes) translate(p) circle(d=guide_d);
         }
-        guide_holes(main_holes,-eps,plate_t+2*eps);
-        // Keep 1.1 mm barrels exactly plate_t high. Full-height upper relief
-        // keeps an awl accessible beside the thicker arch and its braces.
-        guide_holes(main_holes,plate_t,tool_top-plate_t+eps,guide_d+1.2);
+        if(template_ribs)
+            translate([0,0,plate_t]) linear_extrude(trim_rib_h)
+                trim_outer_ribs_2d();
+        if(mouth_arch) {
+            rotate([90,0,0]) linear_extrude(arch_width_y) mouth_arch_profile();
+            mouth_arch_mounts();
+        }
+      }
+      for(s=[-1,1])
+          shallow_line([s*(ro-3.5),0],[s*(ro-.9),0],.5,
+                       plate_t+trim_rib_h,.35);
+      engraved_text("M3",[0,straight+slot_outer+trim_outer_band/2],2.5,
+                    plate_t,.3);
     }
 }
 
@@ -392,7 +431,8 @@ module C_tab() {
 module choose_part() {
     if(part=="M1") translate([blank_w/2,blank_mouth_y,0]) M1_lower();
     else if(part=="M2") translate([press_outer_r,mouth_extension,0]) M2_press();
-    else if(part=="M3") translate([cut_r,0,0]) M3_trim();
+    else if(part=="M3")
+        translate([cut_r+trim_slot_w+trim_outer_band,mouth_extension,0]) M3_trim();
     else if(part=="A") A_blank();
     else if(part=="B") translate([cut_r,flap_extension,0]) B_back();
     else if(part=="C") C_tab();
@@ -414,5 +454,5 @@ module choose_part() {
 
 echo(part=part,cut_width=2*cut_r,forming_width=2*mold_r,
      guide_d=guide_d,guide_web=min_guide_web,
-     snap_relief_d=snap_relief_d,snap_relief_depth=snap_relief_depth);
+     snap_mark_d=stud_hole_d,snap_access_d=snap_access_d,trim_slot_w=trim_slot_w);
 choose_part();

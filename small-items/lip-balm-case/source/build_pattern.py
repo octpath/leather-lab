@@ -366,15 +366,15 @@ def make_pdf():
     text(c,158,mouth+1,"口元の基準",7,GUIDE)
     text(c,158,mouth+6,"上端から20 mm",7,GUIDE)
     line(c, 107, sy, 154, sy+7, MUTED, .13)
-    text(c, 158, sy+8, "本体側ホック中心", 7)
+    text(c, 158, sy+8, "本体側ホック参考中心", 7)
     text(c, 158, sy+13, "ハトメ抜き7号（2.1 mm）", 7, MUTED)
     dimension_v(c, 117, mouth, sy, "12 mm")
-    text(c,105,173,"ホック中心を基準に型へ位置合わせ",7,GUIDE,"center")
+    text(c,105,173,"口元と中心線を基準に型へ位置合わせ",7,GUIDE,"center")
     text(c,20,207,"濃灰の実線＝粗裁ち線　青の一点鎖線＝位置合わせ基準　十字＝ホック中心",8)
-    text(c,20,220,"ホックを取り付けてから成形。ホック中心を基準に型へ位置合わせします。",8)
-    text(c,20,228,"成形後に口元と外周を切り揃えます。",8)
+    text(c,20,220,"ホックを付けずに成形。乾燥後、M1背面からホック中心を写します。",8)
+    text(c,20,228,"M3で口元・外周・縫い穴位置を写し、型を外して裁断します。",8)
     text(c,20,240,"革厚1.0-1.5 mm / 縫い代3 mm / 菱目打ち4 mmピッチ",8,MUTED)
-    text(c,20,248,"型はホックの表裏が当たらない形状にしてください。",8,MUTED)
+    text(c,20,248,"裁断・穴あけ後、7号（2.1 mm）の本体側ホックを取り付けます。",8,MUTED)
     c.showPage()
 
     # Page 3: back plus a flap whose closure is positioned after forming.
@@ -509,16 +509,16 @@ def write_data():
         "front_forming_blank":{"width":90,"height":120,"mouth_reference_from_top":20,
                                "snap_centre_from_top_left":[45,32],
                                "snap_punch_number":FRONT_SNAP_PUNCH_NUMBER,"snap_punch_diameter":FRONT_SNAP_PUNCH_D,
-                               "note":"Oversized blank, not a compensated developed skin. Install front snap before forming; datum registration required."},
+                               "note":"Oversized blank, not a compensated developed skin. Form without hardware; mark snap centre through M1 rear access after drying, then remove tools and punch No.7 before fitting the snap. Blank centre is a reference only."},
         "trimming_guide_reference":{"aperture_width":2*CUT_R,"aperture_height":FORMED_H,
                                     "paper_template_included":False,
-                                    "note":"Reserved for a future 3D-printed trimming guide. No paper window template in this revision."},
+                                    "note":"Fixed cutting-contour reference for the inner edge of M3's cutting slots; not the outside dimensions of the enlarged frame. No paper window template."},
         "forming_target_not_yet_manufactured":{"projected_width":2*MOLD_R,"projected_bottom_radius":MOLD_R,
                                               "projected_straight_length":STRAIGHT,"depth":18,
                                               "body_section":"semiellipse against flat back; lower surface smoothly rounded",
                                               "snap_relief_external_diameter":None,"snap_relief_internal_diameter":None,
                                               "snap_relief_depths":None,
-                                              "note":"Both inner and outer hardware need relief. Actual hardware dimensions unknown. No 3D file authored."},
+                                              "note":"Legacy preliminary forming dimensions; current 3D SCAD is authoritative. Front snap is fitted after forming, with a rear marking passage instead of a hardware recess."},
         "back":{"cut_width":2*CUT_R,"cut_height":FLAP_EXTENSION+FORMED_H,
                 "flap_extension_from_mouth":FLAP_EXTENSION,"provisional_flap_snap_centre":[0,FLAP_SNAP_FROM_MOUTH],
                 "snap_punch":"No.12 / 3.6 mm; determine centre after forming with longest lip fitted",
